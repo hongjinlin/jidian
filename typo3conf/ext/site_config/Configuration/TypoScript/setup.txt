@@ -1,0 +1,45 @@
+
+plugin.tx_siteconfig {
+	view {
+		templateRootPath = {$plugin.tx_siteconfig.view.templateRootPath}
+		partialRootPath = {$plugin.tx_siteconfig.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_siteconfig.view.layoutRootPath}
+	}
+	persistence {
+		storagePid = {$plugin.tx_siteconfig.persistence.storagePid}
+	}
+}
+
+plugin.tx_siteconfig._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-site-config table {
+		border-collapse:separate;
+		border-spacing:10px;
+	}
+
+	.tx-site-config table th {
+		font-weight:bold;
+	}
+
+	.tx-site-config table td {
+		vertical-align:top;
+	}
+
+	.typo3-messages .message-error {
+		color:red;
+	}
+
+	.typo3-messages .message-ok {
+		color:green;
+	}
+
+)

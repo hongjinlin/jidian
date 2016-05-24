@@ -1,0 +1,75 @@
+{namespace n=GeorgRinger\News\ViewHelpers}
+{namespace ngoos=Ngoos\ViewHelpers}
+<li class="article articletype-{newsItem.type}{f:if(condition: newsItem.istopnews, then: ' topnews')}">
+    <n:excludeDisplayedNews newsItem="{newsItem}"/>
+    <f:if condition="{settings.templateLayout}==1">
+        <f:then>
+            <f:if condition="{iterator.isFirst}">
+                <h3 class="col-xs-12">最新动态</h3>
+            </f:if>
+            <div class="row hidden-xs">
+                <div class="col-xs-9 col-sm-9">
+                    <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}" configuration="{useCacheHash:0}">
+                        <f:if condition="{newsItem.istopnews}">
+                            [置顶]
+                        </f:if>
+                        {newsItem.title}
+                    </n:link>
+                </div>
+                <div class="col-sm-3 text-right"><f:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</f:format.date></div>
+            </div>
+            <div class="row visible-xs">
+                <f:if condition="{ngoos:getImgUrlFromContent(content:newsItem.bodytext)}">
+                    <f:then><div class="col-xs-9"></f:then>
+                    <f:else><div class="col-xs-12"></f:else>
+                </f:if>
+                <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}" configuration="{useCacheHash:0}">
+                    <f:if condition="{newsItem.istopnews}">
+                        [置顶]
+                    </f:if>
+                    {newsItem.title}
+                </n:link>
+                <h4>{newsItem.author} | <f:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</f:format.date></h4>
+                </div>
+                <f:if condition="{ngoos:getImgUrlFromContent(content:newsItem.bodytext)}">
+                    <div class="col-xs-3">
+                        <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+                            <img src="{ngoos:getImgUrlFromContent(content:newsItem.bodytext)}" title="{newsItem.title}" alt="{newsItem.title}"/>
+                        </n:link>
+                    </div>
+                </f:if>
+            </div>
+        </f:then>
+        <f:else>
+            <div class="row">
+                <f:if condition="{ngoos:getImgUrlFromContent(content:newsItem.bodytext)}">
+                    <f:then><div class="col-xs-9"></f:then>
+                    <f:else><div class="col-xs-12"></f:else>
+                </f:if>
+                <h3>
+                    <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}" configuration="{useCacheHash:0}">
+                        <f:if condition="{newsItem.istopnews}">
+                            [置顶]
+                        </f:if>
+                        {newsItem.title}
+                    </n:link>
+                </h3>
+                <h4>{newsItem.author} | <f:format.date format="{f:translate(key:'dateFormat')}">{newsItem.datetime}</f:format.date></h4>
+                <p>
+                    <f:if condition="{newsItem.teaser}">
+                        <f:then>{newsItem.teaser -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.stripTags()}</f:then>
+                        <f:else>{newsItem.bodytext -> f:format.crop(maxCharacters: '{settings.cropMaxCharacters}', respectWordBoundaries:'1') -> f:format.stripTags()}</f:else>
+                    </f:if>
+                </p>
+            </div>
+            <f:if condition="{ngoos:getImgUrlFromContent(content:newsItem.bodytext)}">
+                <div class="col-xs-3">
+                    <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+                        <img src="{ngoos:getImgUrlFromContent(content:newsItem.bodytext)}" title="{newsItem.title}" alt="{newsItem.title}"/>
+                    </n:link>
+                </div>
+            </f:if>
+            </div>
+        </f:else>
+    </f:if>
+</li>

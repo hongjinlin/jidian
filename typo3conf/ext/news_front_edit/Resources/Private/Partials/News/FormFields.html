@@ -1,0 +1,63 @@
+{namespace h=TaoJiang\NewsFrontEdit\ViewHelpers}
+{namespace n=Tx_News_ViewHelpers}
+<div class="form-group">
+    <label class="control-label">标题 *</label>
+    <f:form.textfield property="title"  class="form-control" placeholder="新闻标题"/>
+</div>
+
+<div class="form-group">
+    <label class="control-label">简介</label>
+    <f:form.textarea property="teaser" cols="80" rows="2" class="form-control"/>
+</div>
+
+<div class="form-group">
+    <label class="control-label">内容 *</label>
+    <f:form.textarea id="news_feront_edit_bodytext" property="bodytext" style="width:100%" rows="10"/>
+</div>
+
+
+<div class="form-group">
+    <label class="control-label">发布时间 *</label>
+    <div class='input-group datetimepicker-datetime'>
+        <f:form.textfield property="datetime" value="{news.datetime->f:format.date(format: 'Y-m-d H:i')}" class="form-control" placeholder="Y-m-d"/>
+        <span class="input-group-addon">
+            <span class="glyphicon glyphicon-calendar"></span>
+        </span>
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label">类别 *</label>
+    <f:form.select property="categories" options="{categories}" optionValueField="uid" optionLabelField="title" class="select2 form-control" multiple="multiple" />
+</div>
+
+
+<div class="form-group">
+    <label class="control-label">作者 *</label>
+    <f:form.textfield property="author" class="form-control" />
+</div>
+
+<!--
+<div class="form-group">
+    <label class="control-label">上传视频</label>
+    <div>
+        <h:form.upload property="falMedia.0">
+            <f:if condition="{resource}">
+                <div class="mediaelement-video">
+                    <n:falMediaFactory classes="Tx_News_MediaRenderer_Video_Fal" element="{resource}" width="{settings.video.width}"  height="{settings.video.height}" />
+                </div>
+            </f:if>
+        </h:form.upload>(只支持 flv,mp4)
+    </div>
+</div>
+-->
+
+<div class="form-group">
+    <div class="checkbox c-checkbox">
+        <label>
+            <f:form.checkbox property="istopnews" value="1"/>
+            <span class="fa fa-check"></span>
+            置顶
+        </label>
+    </div>
+</div>

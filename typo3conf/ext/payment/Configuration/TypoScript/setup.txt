@@ -1,0 +1,53 @@
+
+plugin.tx_payment {
+	view {
+		templateRootPath = {$plugin.tx_payment.view.templateRootPath}
+		partialRootPath = {$plugin.tx_payment.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_payment.view.layoutRootPath}
+        widget{
+            TYPO3\CMS\Fluid\ViewHelpers\Widget\PaginateViewHelper.templateRootPath = EXT:payment/Resources/Private/Templates/
+        }
+	}
+	persistence {
+		storagePid = {$plugin.tx_payment.persistence.storagePid}
+	}
+    settings {
+        paginate {
+            itemsPerPage = 10
+            insertAbove = 0
+            insertBelow = 1
+            prevNextHeaderTags = 1
+            maximumNumberOfLinks = 3
+        }
+    }
+    features {
+        # uncomment the following line to enable the new Property Mapper.
+        # rewrittenPropertyMapper = 1
+        # if enabled, default controller and/or action is skipped when creating URIs through the URI Builder (see http://forge.typo3.org/projects/typo3v4-mvc/wiki/Skip_default_arguments_in_URIs)
+        skipDefaultArguments = 1
+    }
+    mvc.callDefaultActionIfActionCantBeResolved = 1
+    mvc.throwPageNotFoundExceptionIfActionCantBeResolved = 0
+}
+
+plugin.tx_payment._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	.tx-payment .typo3-messages .message-error, .tx-payment .typo3-messages .alert-danger {
+		color:red;
+		display:none;
+	}
+
+	.typo3-messages .message-ok {
+		color:green;
+	}
+
+)

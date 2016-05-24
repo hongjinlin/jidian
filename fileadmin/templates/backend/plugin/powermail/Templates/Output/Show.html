@@ -1,0 +1,61 @@
+{namespace vh=In2code\Powermail\ViewHelpers}
+<f:layout name="Default"/>
+
+Render Powermail_Frontend Show View
+{mail}            Mail Object
+
+
+<f:section name="main">
+    <f:flashMessages class="powermail_message powermail_message_error"/>
+
+    <div class="panel panel-default">
+        <div class="panel-body table-responsive">
+            <table class="table table-hover">
+                <f:for each="{fields}" as="field">
+                    <tr>
+                        <f:for each="{mail.answers}" as="answer">
+                            <f:if condition="{answer.field} == {field}">
+                                <td width="20%">{field.title}</td>
+                                <td>
+                                    <f:comment>Data Type String</f:comment>
+                                    <f:if condition="{answer.valueType} == 0">
+                                        <f:format.nl2br>{answer.value}</f:format.nl2br>
+                                    </f:if>
+                                    <f:comment>Data Type Array</f:comment>
+                                    <f:if condition="{answer.valueType} == 1">
+                                        <vh:String.ImplodeField objects="{answer.value}" separator=", "/>
+                                    </f:if>
+
+                                    <f:comment>Data Type Date (already parsed Timestamp by Model)</f:comment>
+                                    <f:if condition="{answer.valueType} == 2">
+                                        {answer.value}
+                                    </f:if>
+
+                                    <f:comment>Data Type Fileupload</f:comment>
+                                    <f:if condition="{answer.valueType} == 3">
+                                        <f:for each="{answer.value}" as="subValue" iteration="uploadIndex">
+                                            <f:link.page pageUid="{settings.misc.file.folder}{subValue}" target="_blank">
+                                                <f:if condition="{vh:Condition.IsImage(path:subValue)}">
+                                                    <f:then>
+                                                        <f:image src="{settings.misc.file.folder}{subValue}" alt="{subValue}" width="200" maxHeight="200"/>
+                                                    </f:then>
+                                                    <f:else>
+                                                        {subValue}
+                                                    </f:else>
+                                                </f:if>
+                                            </f:link.page>
+                                            <br/>
+                                        </f:for>
+                                    </f:if>
+                                </td>
+                            </f:if>
+                        </f:for>
+                    </tr>
+                </f:for>
+            </table>
+        </div>
+    </div>
+    <f:link.page pageUid="{listPid}" class="btn btn-default">
+        <f:translate key="Back">返回</f:translate>
+    </f:link.page>
+</f:section>

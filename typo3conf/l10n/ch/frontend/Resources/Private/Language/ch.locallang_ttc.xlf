@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="ch" datatype="plaintext" original="messages" date="2015-11-14T13:25:37Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="ALT.imgLinks" approved="yes">
+			<source>Image Links</source>
+			<target>图片链接</target>
+		</trans-unit>
+		<trans-unit id="ALT.imgOptions" approved="yes">
+			<source>Image Options</source>
+			<target>图片选项</target>
+		</trans-unit>
+		<trans-unit id="CType.I.0" approved="yes">
+			<source>Header</source>
+			<target>标题</target>
+		</trans-unit>
+		<trans-unit id="CType.I.1" approved="yes">
+			<source>Text</source>
+			<target>文本</target>
+		</trans-unit>
+		<trans-unit id="CType.I.10" approved="yes">
+			<source>Login</source>
+			<target>登录</target>
+		</trans-unit>
+		<trans-unit id="CType.I.11" approved="yes">
+			<source>Textbox</source>
+			<target>文本框</target>
+		</trans-unit>
+		<trans-unit id="CType.I.12" approved="yes">
+			<source>Special Menus</source>
+			<target>特殊菜单</target>
+		</trans-unit>
+		<trans-unit id="CType.I.13" approved="yes">
+			<source>Insert Records</source>
+			<target>插入记录</target>
+		</trans-unit>
+		<trans-unit id="CType.I.14" approved="yes">
+			<source>Insert Plugin</source>
+			<target>插入插件</target>
+		</trans-unit>
+		<trans-unit id="CType.I.15" approved="yes">
+			<source>Script</source>
+			<target>脚本</target>
+		</trans-unit>
+		<trans-unit id="CType.I.16" approved="yes">
+			<source>Divider</source>
+			<target>分割线</target>
+		</trans-unit>
+		<trans-unit id="CType.I.2" approved="yes">
+			<source>Text &amp; Images</source>
+			<target>文本 &amp; 图片</target>
+		</trans-unit>
+		<trans-unit id="CType.I.3" approved="yes">
+			<source>Images</source>
+			<target>图片</target>
+		</trans-unit>
+		<trans-unit id="CType.I.4" approved="yes">
+			<source>Bullet List</source>
+			<target>列表</target>
+		</trans-unit>
+		<trans-unit id="CType.I.5" approved="yes">
+			<source>Table</source>
+			<target>表格</target>
+		</trans-unit>
+		<trans-unit id="CType.I.6" approved="yes">
+			<source>File Links</source>
+			<target>文件链接</target>
+		</trans-unit>
+		<trans-unit id="CType.I.8" approved="yes">
+			<source>Form</source>
+			<target>表单</target>
+		</trans-unit>
+		<trans-unit id="CType.I.9" approved="yes">
+			<source>Search</source>
+			<target>搜索</target>
+		</trans-unit>
+		<trans-unit id="CType.div.forms" approved="yes">
+			<source>Forms</source>
+			<target>表单</target>
+		</trans-unit>
+		<trans-unit id="CType.div.lists" approved="yes">
+			<source>Lists</source>
+			<target>列表</target>
+		</trans-unit>
+		<trans-unit id="CType.div.special" approved="yes">
+			<source>Special</source>
+			<target>特殊</target>
+		</trans-unit>
+		<trans-unit id="CType.div.standard" approved="yes">
+			<source>Standard</source>
+			<target>标准</target>
+		</trans-unit>
+		<trans-unit id="CType_formlabel" approved="yes">
+			<source>Type</source>
+			<target>类型</target>
+		</trans-unit>
+		<trans-unit id="altText_formlabel" approved="yes">
+			<source>Alternative Labels (one per line)</source>
+			<target>替代标签（每行一个）</target>
+		</trans-unit>
+		<trans-unit id="bodytext.W.RTE" approved="yes">
+			<source>Fullscreen Rich Text Editing</source>
+			<target>全屏富文本编辑器</target>
+		</trans-unit>
+		<trans-unit id="bodytext.W.forms" approved="yes">
+			<source>Forms wizard</source>
+			<target>表单向导</target>
+		</trans-unit>
+		<trans-unit id="bodytext.W.table" approved="yes">
+			<source>Table Wizard</source>
+			<target>表格向导</target>
+		</trans-unit>
+		<trans-unit id="category_field" approved="yes">
+			<source>Category field</source>
+			<target>分类字段</target>
+		</trans-unit>
+		<trans-unit id="colPos" approved="yes">
+			<source>Columns:</source>
+			<target>列：</target>
+		</trans-unit>
+		<trans-unit id="colPos.I.0" approved="yes">
+			<source>Left</source>
+			<target>左</target>
+		</trans-unit>
+		<trans-unit id="colPos.I.1" approved="yes">
+			<source>Normal</source>
+			<target>一般</target>
+		</trans-unit>
+		<trans-unit id="colPos.I.2" approved="yes">
+			<source>Right</source>
+			<target>右</target>
+		</trans-unit>
+		<trans-unit id="colPos.I.3" approved="yes">
+			<source>Border</source>
+			<target>边框</target>
+		</trans-unit>
+		<trans-unit id="colPos_formlabel" approved="yes">
+			<source>Column</source>
+			<target>列</target>
+		</trans-unit>
+		<trans-unit id="cols" approved="yes">
+			<source>Columns</source>
+			<target>列</target>
+		</trans-unit>
+		<trans-unit id="cols.I.0" approved="yes">
+			<source>Auto</source>
+			<target>自动</target>
+		</trans-unit>
+		<trans-unit id="date" approved="yes">
+			<source>Date</source>
+			<target>日期</target>
+		</trans-unit>
+		<trans-unit id="date_formlabel" approved="yes">
+			<source>Date</source>
+			<target>日期</target>
+		</trans-unit>
+		<trans-unit id="field.default.hidden" approved="yes">
+			<source>Visibility of content element</source>
+			<target>内容元素的可见性</target>
+		</trans-unit>
+		<trans-unit id="field.table.bodytext" approved="yes">
+			<source>Table content</source>
+			<target>表格内容</target>
+		</trans-unit>
+		<trans-unit id="file_collections" approved="yes">
+			<source>File collections</source>
+			<target>文件集合</target>
+		</trans-unit>
+		<trans-unit id="file_collections.ALT.uploads_formlabel" approved="yes">
+			<source>Select file collections</source>
+			<target>选择文件集合</target>
+		</trans-unit>
+		<trans-unit id="filelink_size" approved="yes">
+			<source>Show File Size:</source>
+			<target>显示文件大小：</target>
+		</trans-unit>
+		<trans-unit id="filelink_size_formlabel" approved="yes">
+			<source>Display File Size Information</source>
+			<target>显示文件大小信息</target>
+		</trans-unit>
+		<trans-unit id="filelink_sorting" approved="yes">
+			<source>Sort Filelist:</source>
+			<target>排序文件列表：</target>
+		</trans-unit>
+		<trans-unit id="filelink_sorting.extension" approved="yes">
+			<source>by Fileextension</source>
+			<target>按文件扩展</target>
+		</trans-unit>
+		<trans-unit id="filelink_sorting.name" approved="yes">
+			<source>by Filename</source>
+			<target>按文件名</target>
+		</trans-unit>
+		<trans-unit id="filelink_sorting.none" approved="yes">
+			<source>none</source>
+			<target>无</target>
+		</trans-unit>
+		<trans-unit id="filelink_sorting.size" approved="yes">
+			<source>by Filesize</source>
+			<target>按文件大小</target>
+		</trans-unit>
+		<trans-unit id="filelink_sorting.type" approved="yes">
+			<source>by Filetype</source>
+			<target>按文件类型</target>
+		</trans-unit>
+		<trans-unit id="header" approved="yes">
+			<source>Header:</source>
+			<target>标题：</target>
+		</trans-unit>
+		<trans-unit id="header.ALT.div_formlabel" approved="yes">
+			<source>Name (not visible in frontend)</source>
+			<target>名字（前台不出现）</target>
+		</trans-unit>
+		<trans-unit id="header.ALT.html_formlabel" approved="yes">
+			<source>Name (not visible in frontend)</source>
+			<target>名字（前台不出现）</target>
+		</trans-unit>
+		<trans-unit id="header.ALT.script_formlabel" approved="yes">
+			<source>Name (not visible in frontend)</source>
+			<target>名字（前台不出现）</target>
+		</trans-unit>
+		<trans-unit id="header.ALT.shortcut_formlabel" approved="yes">
+			<source>Name (not visible in frontend)</source>
+			<target>名字（前台不出现）</target>
+		</trans-unit>
+		<trans-unit id="header_formlabel" approved="yes">
+			<source>Header</source>
+			<target>标题</target>
+		</trans-unit>
+		<trans-unit id="header_layout.I.6" approved="yes">
+			<source>Hidden</source>
+			<target>隐藏</target>
+		</trans-unit>
+		<trans-unit id="header_layout_formlabel" approved="yes">
+			<source>Type</source>
+			<target>类型</target>
+		</trans-unit>
+		<trans-unit id="header_link_formlabel" approved="yes">
+			<source>Link</source>
+			<target>链接</target>
+		</trans-unit>
+		<trans-unit id="header_position" approved="yes">
+			<source>Align:</source>
+			<target>对齐：</target>
+		</trans-unit>
+		<trans-unit id="header_position.I.1" approved="yes">
+			<source>Center</source>
+			<target>中间</target>
+		</trans-unit>
+		<trans-unit id="header_position.I.2" approved="yes">
+			<source>Right</source>
+			<target>右</target>
+		</trans-unit>
+		<trans-unit id="header_position.I.3" approved="yes">
+			<source>Left</source>
+			<target>左</target>
+		</trans-unit>
+		<trans-unit id="header_position_formlabel" approved="yes">
+			<source>Alignment</source>
+			<target>对齐</target>
+		</trans-unit>
+		<trans-unit id="hidden.I.0" approved="yes">
+			<source>Disable</source>
+			<target>禁止</target>
+		</trans-unit>
+		<trans-unit id="hidden_formlabel" approved="yes">
+			<source>Content Element</source>
+			<target>内容元素</target>
+		</trans-unit>
+		<trans-unit id="image_altText" approved="yes">
+			<source>Alternative Text:</source>
+			<target>替代文字：</target>
+		</trans-unit>
+		<trans-unit id="image_compression_formlabel" approved="yes">
+			<source>Quality and Type</source>
+			<target>质量和类型</target>
+		</trans-unit>
+		<trans-unit id="image_effects" approved="yes">
+			<source>Effects:</source>
+			<target>效果；</target>
+		</trans-unit>
+		<trans-unit id="image_effects.I.0" approved="yes">
+			<source>None</source>
+			<target>无</target>
+		</trans-unit>
+		<trans-unit id="image_effects_formlabel" approved="yes">
+			<source>Effect</source>
+			<target>效果</target>
+		</trans-unit>
+		<trans-unit id="image_link" approved="yes">
+			<source>Link:</source>
+			<target>链接：</target>
+		</trans-unit>
+		<trans-unit id="image_longdescURL" approved="yes">
+			<source>Long Description URL:</source>
+			<target>长描述地址：</target>
+		</trans-unit>
+		<trans-unit id="image_titleText" approved="yes">
+			<source>Title Text:</source>
+			<target>标题文本：</target>
+		</trans-unit>
+		<trans-unit id="image_zoom" approved="yes">
+			<source>Click-enlarge:</source>
+			<target>点击放大：</target>
+		</trans-unit>
+		<trans-unit id="image_zoom_formlabel" approved="yes">
+			<source>Enlarge on Click</source>
+			<target>点击放大：</target>
+		</trans-unit>
+		<trans-unit id="imageborder_formlabel" approved="yes">
+			<source>Border</source>
+			<target>边框</target>
+		</trans-unit>
+		<trans-unit id="imagecaption.ALT.script" approved="yes">
+			<source>Comments:</source>
+			<target>备注：</target>
+		</trans-unit>
+		<trans-unit id="imagecaption.ALT.script_formlabel" approved="yes">
+			<source>Comments</source>
+			<target>备注</target>
+		</trans-unit>
+		<trans-unit id="imagecaption.ALT.uploads" approved="yes">
+			<source>Descriptions:</source>
+			<target>描述：</target>
+		</trans-unit>
+		<trans-unit id="imagecaption.ALT.uploads_formlabel" approved="yes">
+			<source>File Descriptions (one per line)</source>
+			<target>文件描述(一行一个)</target>
+		</trans-unit>
+		<trans-unit id="imagecaption_formlabel" approved="yes">
+			<source>Captions (one per line)</source>
+			<target>标题（一行一个）</target>
+		</trans-unit>
+		<trans-unit id="imagecaption_position" approved="yes">
+			<source>Align:</source>
+			<target>对齐：</target>
+		</trans-unit>
+		<trans-unit id="imagecaption_position.I.1" approved="yes">
+			<source>Center</source>
+			<target>中间</target>
+		</trans-unit>
+		<trans-unit id="imagecaption_position.I.2" approved="yes">
+			<source>Right</source>
+			<target>右</target>
+		</trans-unit>
+		<trans-unit id="imagecaption_position.I.3" approved="yes">
+			<source>Left</source>
+			<target>左</target>
+		</trans-unit>
+		<trans-unit id="imagecaption_position_formlabel" approved="yes">
+			<source>Caption Alignment</source>
+			<target>标题对齐</target>
+		</trans-unit>
+		<trans-unit id="imageheight" approved="yes">
+			<source>Height (pixels):</source>
+			<target>高度（像素）：</target>
+		</trans-unit>
+		<trans-unit id="imageheight_formlabel" approved="yes">
+			<source>Height (px)</source>
+			<target>高度（px）</target>
+		</trans-unit>
+		<trans-unit id="imageorient" approved="yes">
+			<source>Position:</source>
+			<target>位置：</target>
+		</trans-unit>
+		<trans-unit id="imageorient.I.0" approved="yes">
+			<source>Above, center</source>
+			<target>上，中</target>
+		</trans-unit>
+		<trans-unit id="imageorient.I.1" approved="yes">
+			<source>Above, right</source>
+			<target>上，右</target>
+		</trans-unit>
+		<trans-unit id="imageorient.I.2" approved="yes">
+			<source>Above, left</source>
+			<target>上，左</target>
+		</trans-unit>
+		<trans-unit id="imageorient.I.3" approved="yes">
+			<source>Below, center</source>
+			<target>下，中</target>
+		</trans-unit>
+		<trans-unit id="imageorient.I.4" approved="yes">
+			<source>Below, right</source>
+			<target>下，右</target>
+		</trans-unit>
+		<trans-unit id="imageorient.I.5" approved="yes">
+			<source>Below, left</source>
+			<target>下，左</target>
+		</trans-unit>
+		<trans-unit id="imageorient.I.6" approved="yes">
+			<source>In text, right</source>
+			<target>在文本中，右</target>
+		</trans-unit>
+		<trans-unit id="imageorient.I.7" approved="yes">
+			<source>In text, left</source>
+			<target>在文本中，左</target>
+		</trans-unit>
+		<trans-unit id="imageorient_formlabel" approved="yes">
+			<source>Position and Alignment</source>
+			<target>位置和对齐</target>
+		</trans-unit>
+		<trans-unit id="images.addFileReference" approved="yes">
+			<source>Add image</source>
+			<target>添加图片</target>
+		</trans-unit>
+		<trans-unit id="imagewidth" approved="yes">
+			<source>Width (pixels):</source>
+			<target>宽度（像素）：</target>
+		</trans-unit>
+		<trans-unit id="imagewidth_formlabel" approved="yes">
+			<source>Width (px)</source>
+			<target>宽度（px）</target>
+		</trans-unit>
+		<trans-unit id="linkToTop" approved="yes">
+			<source>To top:</source>
+			<target>到顶端：</target>
+		</trans-unit>
+		<trans-unit id="list_type" approved="yes">
+			<source>Plugin:</source>
+			<target>插件：</target>
+		</trans-unit>
+		<trans-unit id="list_type_formlabel" approved="yes">
+			<source>Selected Plugin</source>
+			<target>所选插件</target>
+		</trans-unit>
+		<trans-unit id="longdescURL_formlabel" approved="yes">
+			<source>Long Description URLs (one per line)</source>
+			<target>长描述地址（每行一个）</target>
+		</trans-unit>
+		<trans-unit id="media" approved="yes">
+			<source>Files</source>
+			<target>文件</target>
+		</trans-unit>
+		<trans-unit id="media.ALT.uploads_formlabel" approved="yes">
+			<source>Select single files</source>
+			<target>选择单个文件</target>
+		</trans-unit>
+		<trans-unit id="media.addFileReference" approved="yes">
+			<source>Add file</source>
+			<target>添加文件</target>
+		</trans-unit>
+		<trans-unit id="media.dataAttributes.content" approved="yes">
+			<source>Content</source>
+			<target>内容</target>
+		</trans-unit>
+		<trans-unit id="menu_type" approved="yes">
+			<source>Menu Type</source>
+			<target>菜单类型</target>
+		</trans-unit>
+		<trans-unit id="menu_type.I.1" approved="yes">
+			<source>Menu of subpages of selected pages</source>
+			<target>所选页面子页的菜单</target>
+		</trans-unit>
+		<trans-unit id="menu_type.I.2" approved="yes">
+			<source>Menu of subpages of selected pages including abstracts</source>
+			<target>所选包含摘要的页面子页面的菜单</target>
+		</trans-unit>
+		<trans-unit id="menu_type.I.4" approved="yes">
+			<source>Sitemap</source>
+			<target>站点地图</target>
+		</trans-unit>
+		<trans-unit id="menu_type.I.6" approved="yes">
+			<source>Recently updated pages</source>
+			<target>最近更新的页面</target>
+		</trans-unit>
+		<trans-unit id="menu_type.I.7" approved="yes">
+			<source>Related pages (based on keywords)</source>
+			<target>相关页面（基于关键词）</target>
+		</trans-unit>
+		<trans-unit id="menu_type.I.8" approved="yes">
+			<source>Sitemaps of selected pages</source>
+			<target>选择页面的站点地图</target>
+		</trans-unit>
+		<trans-unit id="menu_type.I.categorized_content" approved="yes">
+			<source>Content elements for selected categories</source>
+			<target>所选分类的内容元素</target>
+		</trans-unit>
+		<trans-unit id="menu_type.I.categorized_pages" approved="yes">
+			<source>Pages for selected categories</source>
+			<target>所选分类的页面</target>
+		</trans-unit>
+		<trans-unit id="menu_type_formlabel" approved="yes">
+			<source>Menu Type</source>
+			<target>菜单类型</target>
+		</trans-unit>
+		<trans-unit id="multimedia" approved="yes">
+			<source>File:</source>
+			<target>文件：</target>
+		</trans-unit>
+		<trans-unit id="multimedia_formlabel" approved="yes">
+			<source>Selected Media File</source>
+			<target>所选媒体文件</target>
+		</trans-unit>
+		<trans-unit id="pages.ALT.login" approved="yes">
+			<source>Send to Page:</source>
+			<target>发送到页面：</target>
+		</trans-unit>
+		<trans-unit id="pages.ALT.mailform" approved="yes">
+			<source>Target Page</source>
+			<target>目标页面</target>
+		</trans-unit>
+		<trans-unit id="pages.ALT.search" approved="yes">
+			<source>Send to Page:</source>
+			<target>发送到页面：</target>
+		</trans-unit>
+		<trans-unit id="pages.ALT.searchform" approved="yes">
+			<source>Target page</source>
+			<target>目标页面</target>
+		</trans-unit>
+		<trans-unit id="palette.access" approved="yes">
+			<source>Publish Dates and Access Rights</source>
+			<target>发布日期和访问权限</target>
+		</trans-unit>
+		<trans-unit id="palette.appearanceLinks" approved="yes">
+			<source>Links</source>
+			<target>链接</target>
+		</trans-unit>
+		<trans-unit id="palette.frames" approved="yes">
+			<source>Content Element Layout</source>
+			<target>内容元素布局</target>
+		</trans-unit>
+		<trans-unit id="palette.general" approved="yes">
+			<source>Content Element</source>
+			<target>内容元素</target>
+		</trans-unit>
+		<trans-unit id="palette.header" approved="yes">
+			<source>Header</source>
+			<target>标题</target>
+		</trans-unit>
+		<trans-unit id="palette.headers" approved="yes">
+			<source>Headlines</source>
+			<target>头条</target>
+		</trans-unit>
+		<trans-unit id="palette.image_accessibility" approved="yes">
+			<source>Accessibility</source>
+			<target>可访问性</target>
+		</trans-unit>
+		<trans-unit id="palette.image_settings" approved="yes">
+			<source>Image Adjustments</source>
+			<target>图片丢弃</target>
+		</trans-unit>
+		<trans-unit id="palette.imageblock" approved="yes">
+			<source>Image Alignment</source>
+			<target>图片对齐</target>
+		</trans-unit>
+		<trans-unit id="palette.imagefiles" approved="yes">
+			<source>Images and Captions</source>
+			<target>图片和标题</target>
+		</trans-unit>
+		<trans-unit id="palette.imagelinks" approved="yes">
+			<source>Behavior</source>
+			<target>行为</target>
+		</trans-unit>
+		<trans-unit id="palette.loginform" approved="yes">
+			<source>Redirect Target and Frontend User Container</source>
+			<target>转发目标和前台用户容器</target>
+		</trans-unit>
+		<trans-unit id="palette.mailform" approved="yes">
+			<source>Target and Recipient</source>
+			<target>目标和收件人</target>
+		</trans-unit>
+		<trans-unit id="palette.menu" approved="yes">
+			<source>Menu and Sitemap</source>
+			<target>菜单和站点地图</target>
+		</trans-unit>
+		<trans-unit id="palette.menu_accessibility" approved="yes">
+			<source>Accessibility</source>
+			<target>可访问性</target>
+		</trans-unit>
+		<trans-unit id="palette.multimediafiles" approved="yes">
+			<source>Media Files and Parameters</source>
+			<target>媒体文件和参数</target>
+		</trans-unit>
+		<trans-unit id="palette.searchform" approved="yes">
+			<source>Search Results</source>
+			<target>搜索结果</target>
+		</trans-unit>
+		<trans-unit id="palette.table_layout" approved="yes">
+			<source>Table Layout</source>
+			<target>表格布局</target>
+		</trans-unit>
+		<trans-unit id="palette.textbox" approved="yes">
+			<source>Render Text into Images</source>
+			<target>生成文本到图片</target>
+		</trans-unit>
+		<trans-unit id="palette.textlayout" approved="yes">
+			<source>Text Layout</source>
+			<target>文本布局</target>
+		</trans-unit>
+		<trans-unit id="palette.uploads_layout" approved="yes">
+			<source>Filelinks Layout</source>
+			<target>文件链接布局</target>
+		</trans-unit>
+		<trans-unit id="palette.visibility" approved="yes">
+			<source>Visibility</source>
+			<target>可见性</target>
+		</trans-unit>
+		<trans-unit id="records" approved="yes">
+			<source>Items:</source>
+			<target>项目：</target>
+		</trans-unit>
+		<trans-unit id="records_formlabel" approved="yes">
+			<source>Records</source>
+			<target>记录</target>
+		</trans-unit>
+		<trans-unit id="recursive.I.5" approved="yes">
+			<source>Infinite</source>
+			<target>无限的</target>
+		</trans-unit>
+		<trans-unit id="rte_enabled" approved="yes">
+			<source>Disable Rich Text Editor:</source>
+			<target>禁止富文本编辑器：</target>
+		</trans-unit>
+		<trans-unit id="rte_enabled.I.0" approved="yes">
+			<source>Disable</source>
+			<target>禁止</target>
+		</trans-unit>
+		<trans-unit id="rte_enabled_formlabel" approved="yes">
+			<source>Rich Text Editor</source>
+			<target>富文本编辑器</target>
+		</trans-unit>
+		<trans-unit id="select_key.ALT.uploads" approved="yes">
+			<source>Read from Path:</source>
+			<target>从路径读取：</target>
+		</trans-unit>
+		<trans-unit id="select_key.ALT.uploads_formlabel" approved="yes">
+			<source>Path</source>
+			<target>路径</target>
+		</trans-unit>
+		<trans-unit id="select_key_formlabel" approved="yes">
+			<source>Plugin Mode</source>
+			<target>插件模式</target>
+		</trans-unit>
+		<trans-unit id="selected_categories" approved="yes">
+			<source>Selected categories</source>
+			<target>所选分类</target>
+		</trans-unit>
+		<trans-unit id="spaceAfter_formlabel" approved="yes">
+			<source>Bottom Margin</source>
+			<target>底边缘</target>
+		</trans-unit>
+		<trans-unit id="spaceBefore_formlabel" approved="yes">
+			<source>Top Margin</source>
+			<target>顶边缘</target>
+		</trans-unit>
+		<trans-unit id="splash_layout" approved="yes">
+			<source>Textbox Type:</source>
+			<target>文本框类型：</target>
+		</trans-unit>
+		<trans-unit id="splash_layout.I.1" approved="yes">
+			<source>Image Shadow</source>
+			<target>图片阴影</target>
+		</trans-unit>
+		<trans-unit id="splash_layout_formlabel" approved="yes">
+			<source>Type</source>
+			<target>类型</target>
+		</trans-unit>
+		<trans-unit id="starttime_formlabel" approved="yes">
+			<source>Publish Date</source>
+			<target>发布日期</target>
+		</trans-unit>
+		<trans-unit id="subheader_formlabel" approved="yes">
+			<source>Subheader</source>
+			<target>子标题</target>
+		</trans-unit>
+		<trans-unit id="sys_language_uid_formlabel" approved="yes">
+			<source>Language</source>
+			<target>语言</target>
+		</trans-unit>
+		<trans-unit id="table_bgColor" approved="yes">
+			<source>Backgr. Color:</source>
+			<target>背景色：</target>
+		</trans-unit>
+		<trans-unit id="table_bgColor.I.3" approved="yes">
+			<source>None</source>
+			<target>无</target>
+		</trans-unit>
+		<trans-unit id="table_bgColor.I.5" approved="yes">
+			<source>Black</source>
+			<target>黑</target>
+		</trans-unit>
+		<trans-unit id="table_bgColor.I.6" approved="yes">
+			<source>White</source>
+			<target>白</target>
+		</trans-unit>
+		<trans-unit id="table_bgColor.I.7" approved="yes">
+			<source>Dark Gray</source>
+			<target>黑灰</target>
+		</trans-unit>
+		<trans-unit id="table_bgColor.I.8" approved="yes">
+			<source>Gray</source>
+			<target>灰色</target>
+		</trans-unit>
+		<trans-unit id="table_bgColor.I.9" approved="yes">
+			<source>Silver</source>
+			<target>银色</target>
+		</trans-unit>
+		<trans-unit id="table_bgColor_formlabel" approved="yes">
+			<source>Background color</source>
+			<target>背景色：</target>
+		</trans-unit>
+		<trans-unit id="table_border" approved="yes">
+			<source>Border:</source>
+			<target>边框：</target>
+		</trans-unit>
+		<trans-unit id="table_border_formlabel" approved="yes">
+			<source>Border Size (px)</source>
+			<target>边框尺寸(px)</target>
+		</trans-unit>
+		<trans-unit id="table_cellpadding" approved="yes">
+			<source>Cellpadding:</source>
+			<target>单元格边距：</target>
+		</trans-unit>
+		<trans-unit id="table_cellpadding_formlabel" approved="yes">
+			<source>Cellpadding (px)</source>
+			<target>单元格边距(px)</target>
+		</trans-unit>
+		<trans-unit id="table_cellspacing" approved="yes">
+			<source>Cellspacing:</source>
+			<target>单元格间距：</target>
+		</trans-unit>
+		<trans-unit id="table_cellspacing_formlabel" approved="yes">
+			<source>Cellspacing (px)</source>
+			<target>单元格间距(px)</target>
+		</trans-unit>
+		<trans-unit id="tabs.access" approved="yes">
+			<source>Access</source>
+			<target>访问</target>
+		</trans-unit>
+		<trans-unit id="tabs.accessibility" approved="yes">
+			<source>Accessibility</source>
+			<target>可访问性</target>
+		</trans-unit>
+		<trans-unit id="tabs.appearance" approved="yes">
+			<source>Appearance</source>
+			<target>外观</target>
+		</trans-unit>
+		<trans-unit id="tabs.behaviour" approved="yes">
+			<source>Behaviour</source>
+			<target>行为</target>
+		</trans-unit>
+		<trans-unit id="tabs.extended" approved="yes">
+			<source>Extended</source>
+			<target>扩展</target>
+		</trans-unit>
+		<trans-unit id="tabs.images" approved="yes">
+			<source>Images</source>
+			<target>图片</target>
+		</trans-unit>
+		<trans-unit id="tabs.media" approved="yes">
+			<source>Media</source>
+			<target>媒体</target>
+		</trans-unit>
+		<trans-unit id="tabs.plugin" approved="yes">
+			<source>Plugin</source>
+			<target>插件</target>
+		</trans-unit>
+		<trans-unit id="tabs.script" approved="yes">
+			<source>Script</source>
+			<target>脚本</target>
+		</trans-unit>
+		<trans-unit id="tabs.text" approved="yes">
+			<source>Text</source>
+			<target>文本</target>
+		</trans-unit>
+		<trans-unit id="target" approved="yes">
+			<source>Target:</source>
+			<target>目标：</target>
+		</trans-unit>
+		<trans-unit id="target.I.1" approved="yes">
+			<source>New window</source>
+			<target>新窗口</target>
+		</trans-unit>
+		<trans-unit id="titleText_formlabel" approved="yes">
+			<source>Titles (one per line)</source>
+			<target>标题（每行一个）</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

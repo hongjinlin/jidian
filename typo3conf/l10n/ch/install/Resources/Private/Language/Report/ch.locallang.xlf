@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="ch" datatype="plaintext" original="messages" date="2015-07-18T12:10:14Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="environment.status.message.error" approved="yes">
+			<source>The system environment check returned errors. Those errors will affect the functionality and stability of your TYPO3 CMS instance. Please check the install tool &quot;System environment&quot; for all details.</source>
+			<target>系统环境监察返回错误，这些错误将影响系统的功能使用和稳定性，请检查安装工具&quot;系统环境&quot;，以获得更多的细节</target>
+		</trans-unit>
+		<trans-unit id="environment.status.message.notice" approved="yes">
+			<source>The system environment check returned notices. Those should not affect the functionality and stability of your TYPO3 CMS instance. Please check the install tool &quot;System environment&quot; for all details.</source>
+			<target>系统环境检查返回了提醒，这个可能对系统的稳定性和功能有影响，请查看安装工具中的“系统环境”部分，以查看更多的细节。</target>
+		</trans-unit>
+		<trans-unit id="environment.status.message.warning" approved="yes">
+			<source>The system environment check returned warnings. Those warnings might have a negative effect on the functionality and stability of your TYPO3 CMS instance. Please check the install tool &quot;System environment&quot; for all details.</source>
+			<target>系统环境检查提示警告信息，这个可能对系统的功能和稳定性有一定影响，请检查系统安装工具“系统环境”，以查看更多细节。</target>
+		</trans-unit>
+		<trans-unit id="environment.status.title" approved="yes">
+			<source>System environment check</source>
+			<target>系统环境检查</target>
+		</trans-unit>
+		<trans-unit id="status_directoryDoesNotExist" approved="yes">
+			<source>%s does not exist.</source>
+			<target>%s 不存在</target>
+		</trans-unit>
+		<trans-unit id="status_directoryDoesNotExistCouldNotCreate" approved="yes" xml:space="preserve">
+			<source>%s does not exist and could not be created.</source>
+			<target>%s  不存在并且不能被创建.</target>
+		</trans-unit>
+		<trans-unit id="status_directoryMustBeWritable" approved="yes">
+			<source>%s must be writable.</source>
+			<target>%s 应可写</target>
+		</trans-unit>
+		<trans-unit id="status_directoryShouldAlsoBeWritable" approved="yes">
+			<source>Also note that it should be writable, if it did exist.</source>
+			<target>请注意这个需要可写，如果它存在</target>
+		</trans-unit>
+		<trans-unit id="status_directoryShouldBeWritable" approved="yes">
+			<source>%s should be writable.</source>
+			<target>%s 应可写</target>
+		</trans-unit>
+		<trans-unit id="status_enabledPermanently" approved="yes">
+			<source>Enabled permanently</source>
+			<target>永久开启</target>
+		</trans-unit>
+		<trans-unit id="status_enabledTemporarily" approved="yes">
+			<source>Enabled temporarily</source>
+			<target>临时开启</target>
+		</trans-unit>
+		<trans-unit id="status_fileSystem" approved="yes">
+			<source>File System</source>
+			<target>文件系统</target>
+		</trans-unit>
+		<trans-unit id="status_installEnabledTemporarily" approved="yes">
+			<source>The Install Tool is temporarily enabled. Delete the file &quot;%s&quot; when you have finished setting up TYPO3. If not used the Install Tool will be disabled automatically in %s minutes.</source>
+			<target>安装工具临时开启，当你完成设置后，删除&quot;%s&quot; 文件。如果没有删除，安装工具将在 %s 后自动删除</target>
+		</trans-unit>
+		<trans-unit id="status_installTool" approved="yes">
+			<source>Install Tool</source>
+			<target>安装工具</target>
+		</trans-unit>
+		<trans-unit id="status_installToolPassword" approved="yes">
+			<source>Install Tool Password</source>
+			<target>安装工具密码</target>
+		</trans-unit>
+		<trans-unit id="status_isDevelopmentVersion" approved="yes">
+			<source>This version of TYPO3 seems to be a development version. Thus no update information exists.</source>
+			<target>这个版本看起来是一个开发版本，因此不存在更新信息。</target>
+		</trans-unit>
+		<trans-unit id="status_missingDirectory" approved="yes">
+			<source>Required directory missing</source>
+			<target>所需目录丢失</target>
+		</trans-unit>
+		<trans-unit id="status_newVersion" approved="yes">
+			<source>There is a new version of TYPO3 available. You can update to version %s</source>
+			<target>TYPO3新的版本可用了，你可以更新到版本 %s</target>
+		</trans-unit>
+		<trans-unit id="status_newVersionSecurityRelevant" approved="yes">
+			<source>There is a new version of TYPO3 available. This update is security relevant. Please update to version %s</source>
+			<target>TYPO3有心的版本，这个更新将于安全相关，请更新到版本 %s</target>
+		</trans-unit>
+		<trans-unit id="status_nonExistingDirectory" approved="yes">
+			<source>Directory not existing</source>
+			<target>目录不存在</target>
+		</trans-unit>
+		<trans-unit id="status_patchLevelNotFoundInReleaseMatrix" approved="yes">
+			<source>It seems that this TYPO3 version has never been released. Thus no update information exists.</source>
+			<target>看起来TYPO3已经更新了，因此不存在更新信息</target>
+		</trans-unit>
+		<trans-unit id="status_recommendedWritableDirectory" approved="yes">
+			<source>Directory should be writable</source>
+			<target>目录应可写</target>
+		</trans-unit>
+		<trans-unit id="status_remainingUpdates" approved="yes">
+			<source>Remaining updates</source>
+			<target>剩余更新</target>
+		</trans-unit>
+		<trans-unit id="status_remoteFetchException" approved="yes">
+			<source>Could not fetch version matrix of TYPO3. Maybe this instance is blocked by a firewall?</source>
+			<target>不能获得TYPO3版本矩阵，可能因为被防火墙禁止</target>
+		</trans-unit>
+		<trans-unit id="status_requiredWritableDirectory" approved="yes">
+			<source>Directory not writable</source>
+			<target>目录不可写</target>
+		</trans-unit>
+		<trans-unit id="status_versionOutdated" approved="yes">
+			<source>The TYPO3 version you're using is not supported anymore. You should update to a supported version.</source>
+			<target>这个版本已经不再被支持了，请更新到一个支持的版本。</target>
+		</trans-unit>
+		<trans-unit id="status_writable" approved="yes">
+			<source>Writable</source>
+			<target>可写</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

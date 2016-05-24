@@ -1,0 +1,51 @@
+<nav role="navigation" class="navbar navbar-default navbar-top navbar-fixed-top">
+    <!-- START navbar header-->
+    <div class="navbar-header">
+        <f:link.page pageUid="{rootPage}" class="navbar-brand">
+            <div class="brand-logo">
+                <f:image src="{f:uri.image(src: logoFile)}" alt="{siteTitle}" class="img-responsive" height="34c" />
+            </div>
+            <div class="brand-logo-collapsed">
+                <f:image src="fileadmin/templates/backend/public/images/logo-single.png" alt="{siteTitle}" class="img-responsive" />
+            </div>
+        </f:link.page>
+    </div>
+    <!-- END navbar header-->
+    <!-- START Nav wrapper-->
+    <div class="nav-wrapper">
+        <!-- START Left navbar-->
+        <ul class="nav navbar-nav">
+            <li>
+                <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->
+                <a href="javascript:void(0);" data-toggle-state="aside-collapsed" class="hidden-xs">
+                    <em class="fa fa-navicon"></em>
+                </a>
+                <!-- Button to show/hide the sidebar on mobile. Visible on mobile only.-->
+                <a href="javascript:void(0);" data-toggle-state="aside-toggled" class="visible-xs">
+                    <em class="fa fa-navicon"></em>
+                </a>
+            </li>
+            <!-- START User avatar toggle-->
+            <li>
+                <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops-->
+                <f:link.page pageUid="be-account"><em class="fa fa-user"></em></f:link.page>
+            </li>
+            <!-- END User avatar toggle-->
+        </ul>
+        <!-- END Left navbar-->
+        <!-- START Right Navbar-->
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <f:link.page pageUid="home" target="_blank"><em class="fa fa-home"></em></f:link.page>
+            </li>
+            <!-- Fullscreen-->
+            <li>
+                <a href="javascript:void(0);" data-toggle="fullscreen">
+                    <em class="fa fa-expand"></em>
+                </a>
+            </li>
+        </ul>
+        <!-- END Right Navbar-->
+    </div>
+    <!-- END Nav wrapper-->
+</nav>

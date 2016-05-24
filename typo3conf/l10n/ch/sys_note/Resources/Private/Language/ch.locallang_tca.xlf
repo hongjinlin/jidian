@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="ch" datatype="plaintext" original="messages" date="2014-10-30T01:20:26Z" product-name="sys_note">
+		<header/>
+		<body>
+			<trans-unit id="sys_note" approved="yes">
+				<source>Internal note</source>
+				<target>内置备忘</target>
+			</trans-unit>
+			<trans-unit id="sys_note.category.I.2" approved="yes">
+				<source>Template</source>
+				<target>模板</target>
+			</trans-unit>
+			<trans-unit id="sys_note.message" approved="yes">
+				<source>Message:</source>
+				<target>消息：</target>
+			</trans-unit>
+			<trans-unit id="sys_note.personal" approved="yes">
+				<source>Personal:</source>
+				<target>个人：</target>
+			</trans-unit>
+			<trans-unit id="sys_note.subject" approved="yes">
+				<source>Subject:</source>
+				<target>主题：</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

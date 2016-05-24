@@ -1,0 +1,24 @@
+<f:layout name="Default" />
+<f:section name="main">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <f:form id="news_edit_validation" action="create" name="news" object="{news}" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>新闻发布</legend>
+                    <f:render partial="News/FormFields" arguments="{_all}"/>
+                    <div class="horizontal-space"></div>
+                    <f:form.submit  class="btn btn-success"  value="添加新闻" />
+                    <f:link.action action="list" class="btn btn-default">返回列表</f:link.action>
+                </fieldset>
+            </f:form>
+            <f:flashMessages renderMode="div" class="alert alert-success fade in"/>
+            <f:render partial="FormErrors" arguments="{object:News}" />
+        </div>
+    </div>
+</f:section>
+
+
+
+
+   
+   

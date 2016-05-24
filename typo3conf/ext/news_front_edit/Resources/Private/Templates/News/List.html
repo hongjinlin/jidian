@@ -1,0 +1,88 @@
+<f:layout name="Default" />
+<f:section name="main">
+    <div class="panel panel-default">
+        <div class="panel-heading ">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-xs-2">
+                    <f:link.action action="new" class="btn btn-default">增加新闻</f:link.action>
+                </div>
+                <div class="col-lg-8 col-md-4 col-xs-4"></div>
+                <div class="col-lg-2 col-md-6 col-xs-6 text-right">
+                    <f:form action="list" name="search" class="form-inline" method="GET">
+                        <div class="input-group">
+                            <input type="hidden" name="id" value="{pageUid}" />
+                            <f:form.hidden name="action" value="list" />
+                            <f:form.textfield name="keyword" value="{keyword}" class="input-sm form-control" placeholder="新闻标题"/>
+                            <span class="input-group-btn">
+                                <f:form.submit value="搜索" class="btn btn-sm btn-default"/>
+                            </span>
+                        </div>
+                    </f:form>
+                </div>
+            </div>
+        </div>
+        <f:widget.paginate objects="{newss}" as="newssPagination"  configuration="{settings.paginate}">
+            <div class="panel-body table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr role="row">
+                            <th></th>
+                            <th>标题</th>
+                            <th>分类</th>
+                            <th>发布时间</th>
+                            <th>置顶</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <f:for each="{newssPagination}" as="news" iteration="itemIteration1">
+                        <tr>
+                            <td>
+                                <div class="checkbox c-checkbox">
+                                    <label>
+                                        <input class="normal sel" type="checkbox" value="{news.uid}">
+                                        <span class="fa fa-check"></span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td>
+                                <f:link.action pageUid="{settings.previewPid}" extensionName="news" pluginName="pi1" controller="News" action="detail" arguments="{news : news}" target="_blank" noCache="1">
+                                    {news.title}
+                                </f:link.action>
+                            </td>
+                            <td><f:for each="{news.categories}" as="category">
+                                    {category.title}
+                                </f:for></td>
+                            <td class="tc">{news.datetime -> f:format.date(format: 'Y-m-d H:i')}</td>
+                            <td>{f:if(condition: news.istopnews, then: '是', else: '否')}</td>
+                            <td class="text-right">
+
+                                <f:link.action action="edit" arguments="{news : news}" class="btn btn-info btn-xs edit">编辑</f:link.action>
+                                <f:link.action action="delete" arguments="{news : news}" class="btn btn-danger btn-xs delete btn-del">删除</f:link.action>
+                            </td>
+                        </tr>
+                        </f:for>
+                        <tr>
+                            <td>
+                                <div class="checkbox c-checkbox">
+                                    <label>
+                                        <input class="normal selectall" type="checkbox">
+                                        <span class="fa fa-check"></span>
+                                    </label>
+                                </div>
+                            </td>
+                            <td colspan="5">
+                                <f:form action="multidelete" name="datas">
+                                    <f:form.hidden id="multidelete-items" property="items" value=""/>
+                                    <f:form.submit value="删除选中" class="btn btn-danger btn-xs delete btn-del btn-delete-all"/>
+                                </f:form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </f:widget.paginate>
+    </div>
+    <div class="hide"><f:flashMessages renderMode="div" /></div>
+</f:section>

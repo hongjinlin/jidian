@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="ch" datatype="plaintext" original="messages" date="2015-06-20T05:18:41Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="tx_payment_domain_model_pay" approved="yes">
+			<source>Pay</source>
+			<target>付款</target>
+		</trans-unit>
+		<trans-unit id="tx_payment_domain_model_pay.certnumber" approved="yes">
+			<source>Certnumber</source>
+			<target>证书编号</target>
+		</trans-unit>
+		<trans-unit id="tx_payment_domain_model_pay.comment" approved="yes">
+			<source>Comment</source>
+			<target>留言</target>
+		</trans-unit>
+		<trans-unit id="tx_payment_domain_model_pay.datauid" approved="yes">
+			<source>Datauid</source>
+			<target>模型数据参数</target>
+		</trans-unit>
+		<trans-unit id="tx_payment_domain_model_pay.email" approved="yes">
+			<source>Email</source>
+			<target>邮箱</target>
+		</trans-unit>
+		<trans-unit id="tx_payment_domain_model_pay.module" approved="yes">
+			<source>Module</source>
+			<target>模型</target>
+		</trans-unit>
+		<trans-unit id="tx_payment_domain_model_pay.title" approved="yes">
+			<source>Title</source>
+			<target>标题</target>
+		</trans-unit>
+		<trans-unit id="tx_payment_domain_model_pay.money" approved="yes">
+			<source>Money</source>
+			<target>金额*</target>
+		</trans-unit>
+		<trans-unit id="tx_payment_domain_model_pay.name" approved="yes">
+			<source>Name</source>
+			<target>名称</target>
+		</trans-unit>
+		<trans-unit id="tx_payment_domain_model_pay.ordernumber" approved="yes">
+			<source>Ordernumber</source>
+			<target>订单编号</target>
+		</trans-unit>
+		<trans-unit id="tx_payment_domain_model_pay.payment" approved="yes">
+			<source>Payment</source>
+			<target>付款方式</target>
+		</trans-unit>
+		<trans-unit id="tx_payment_domain_model_pay.spreadshareuserid" approved="yes">
+			<source>Spreadshareuserid</source>
+			<target>分享人</target>
+		</trans-unit>
+		<trans-unit id="tx_payment_domain_model_pay.telephone" approved="yes">
+			<source>Telephone</source>
+			<target>手机</target>
+		</trans-unit>
+		<trans-unit id="tx_payment_domain_model_pay.url" approved="yes">
+			<source>Url</source>
+			<target>页面地址</target>
+		</trans-unit>
+		<trans-unit id="tx_payment_domain_model_pay.crdate" approved="yes">
+			<source>Create date</source>
+			<target>时间</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

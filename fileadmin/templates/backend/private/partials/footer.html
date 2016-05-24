@@ -1,0 +1,35 @@
+<div class="footer">
+    <div class="container">
+        <div class="footer-main">
+            <div class="contact">
+                <div class="col-md-8 contact-left">
+                    <f:if condition="{f:cObject(typoscriptObjectPath:'lib.dynamicContentSlide',data:'98')}">
+                        <f:cObject typoscriptObjectPath="lib.dynamicContentSlide" data="98" />
+                    </f:if>
+                </div>
+                <div class="col-md-4 contact-right">
+                    <f:if condition="{f:cObject(typoscriptObjectPath:'lib.dynamicContentSlide',data:'99')}">
+                        <f:cObject typoscriptObjectPath="lib.dynamicContentSlide" data="99" />
+                    </f:if>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="footer-bottom">
+                <div class="col-md-4 footer-left">
+                    <ul>
+                        <f:cObject typoscriptObjectPath="lib.navigation.footer" />
+                    </ul>
+                </div>
+                <div class="col-md-4 footer-middle">
+                    <f:if condition="{themeCopyright}">
+                        <p><f:format.raw>{themeCopyrightText}</f:format.raw></p>
+                    </f:if>
+                </div>
+                <div class="col-md-4 footer-right">
+                    <p><a href="#top" class="scroll">返回顶部</a></p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>

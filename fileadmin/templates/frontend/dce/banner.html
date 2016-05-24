@@ -1,0 +1,61 @@
+{namespace dce=ArminVieweg\Dce\ViewHelpers}
+{namespace ngoos=Ngoos\ViewHelpers}
+<f:layout name="Default" />
+
+<f:section name="main">
+    <f:if condition="{field.style}">
+        <f:then>
+            <script type="text/javascript">
+                var bannerArray = [
+                <f:for each="{field.images}" as="vo">
+                "<f:uri.image src='uploads/pics/{vo.image}' maxWidth='1024' />",
+                </f:for>
+                ];
+            </script>
+            <f:for each="{field.images}" as="vo" iteration="itemIteration">
+                <f:if condition="itemIteration.isFirst">
+                    <f:format.raw>{vo.description}</f:format.raw>
+                </f:if>
+            </f:for>
+        </f:then>
+        <f:else>
+            <div class="slider">
+                <ul class="bxslider">
+                    <f:for each="{field.images}" as="vo" iteration="itemIteration">
+                        <li>
+                            <f:if condition="{vo.video}">
+                                <div class="slider-background slider-video hide">
+                                    <iframe src="fileadmin/templates/frontend/public/video/player.php?src={vo.video}" width="100%" height="100%" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                                    <f:if condition="{vo.description}">
+                                        <div class="banner-description {f:if(condition: itemIteration.isFirst, then: '', else:'hide')}">
+                                            <f:format.raw>{vo.description}</f:format.raw>
+                                        </div>
+                                    </f:if>
+                                </div>
+                            </f:if>
+                            <f:if condition="{vo.image}">
+                                <f:then>
+                                    <div class="slider-background slider-image" style="background-image:url('{f:uri.image(src:'uploads/pics/{vo.image}', maxWidth:'1024')}');">
+                                </f:then>
+                                <f:else>
+                                    <div class="slider-background slider-image" style="background-image:url('fileadmin/templates/frontend/public/images/banner-default.png');">
+                                </f:else>
+                            </f:if>
+                                &nbsp;
+                                <f:if condition="{vo.link}">
+                                    <dce:typolink parameter="{vo.link}"></dce:typolink>
+                                </f:if>
+                                <f:if condition="{vo.description}">
+                                    <div class="banner-description {f:if(condition: itemIteration.isFirst, then: '', else:'hide')}">
+                                        <f:format.raw>{vo.description}</f:format.raw>
+                                    </div>
+                                </f:if>
+                                <div class="img-overly"></div>
+                            </div>
+                        </li>
+                    </f:for>
+                </ul>
+            </div>
+        </f:else>
+    </f:if>
+</f:section>

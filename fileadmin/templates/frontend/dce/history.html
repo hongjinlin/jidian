@@ -1,0 +1,20 @@
+{namespace dce=ArminVieweg\Dce\ViewHelpers}
+<f:layout name="Default" />
+
+<f:section name="main">
+    <div class="page-header">
+        <h2 id="timeline">{field.title}</h2>
+    </div>
+    <ul class="timeline">
+        <f:for each="{field.historylist}" as="vo" iteration="itemIteration">
+            <li class="timeline-inverted">
+                <div class="timeline-badge {f:if(condition: itemIteration.isOdd, then: 'success', else: 'danger')}"><f:format.date format="y">@{vo.date}</f:format.date>/<f:format.date format="m">@{vo.date}</f:format.date></div>
+                <div class="timeline-panel">
+                    <div class="timeline-body">
+                        <p>{vo.description}</p>
+                    </div>
+                </div>
+            </li>
+        </f:for>
+    </ul>
+</f:section>

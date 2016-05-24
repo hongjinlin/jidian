@@ -1,0 +1,25 @@
+a:4:{s:21:"mlang_labels_tabdescr";a:1:{i:0;a:2:{s:6:"source";s:583:"This module serves several functions for editing of language files. Translators, extension authors and simple users are supported with special functions for each of them.
+
+Following functions are implemented in this module:
+
+ * Formats: PHP and XML
+ * enhanced insert types
+ * conversion from PHP to XML and vice versa
+ * splitting and merging of language files
+ * workspaces (local (only in backend modules) and global)
+ * simple editing of constants and languages
+ * flexible search and view of constants and values
+ * meta information handling
+ * backups, recovering and diff view";s:6:"target";s:583:"This module serves several functions for editing of language files. Translators, extension authors and simple users are supported with special functions for each of them.
+
+Following functions are implemented in this module:
+
+ * Formats: PHP and XML
+ * enhanced insert types
+ * conversion from PHP to XML and vice versa
+ * splitting and merging of language files
+ * workspaces (local (only in backend modules) and global)
+ * simple editing of constants and languages
+ * flexible search and view of constants and values
+ * meta information handling
+ * backups, recovering and diff view";}}s:21:"mlang_labels_tablabel";a:1:{i:0;a:2:{s:6:"source";s:25:"Editing of Language Files";s:6:"target";s:25:"Editing of Language Files";}}s:14:"mlang_tabs_tab";a:1:{i:0;a:2:{s:6:"source";s:8:"LFEditor";s:6:"target";s:8:"LFEditor";}}s:29:"settings_canChangeEditingMode";a:1:{i:0;a:2:{s:6:"source";s:62:"The user can save localization changes directly to extensions?";s:6:"target";s:62:"The user can save localization changes directly to extensions?";}}}

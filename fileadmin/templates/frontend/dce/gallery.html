@@ -1,0 +1,37 @@
+{namespace dce=ArminVieweg\Dce\ViewHelpers}
+<f:layout name="Default" />
+
+<f:section name="main">
+    <div class="project">
+        <div class="container">
+            <f:if condition="{field.headline}">
+                <div class="project-top">
+                    <h3>{field.headline}</h3>
+                </div>
+            </f:if>
+            <div class="project-bottom">
+                <div class="portfolios entertain_box  wow fadeInUp" data-wow-delay="0.4s" id="portfolio">
+                    <div class="portfolio-top">
+                        <ul id="filters" class="clearfix">
+                            <f:for each="{field.categories}" as="vo">
+                                <li><span class="filter" data-filter="<f:for each="{vo.category -> dce:explode(delimiter:',')}" as="item" iteration="iterator">cat-{item} </f:for>">{vo.title}</span></li>
+                            </f:for>
+                        </ul>
+                        <div id="portfoliolist">
+                            <f:for each="{field.products}" as="vo">
+                                <div class="portfolio cat-{vo.category} mix_all" data-cat="cat-{vo.category}">
+                                    <div class="portfolio-wrapper">
+                                        <a href="uploads/pics/{vo.image}" class="b-link-stripe b-animate-go swipebox"  title="{vo.title}">
+                                            <f:image src="uploads/pics/{vo.image}" alt="" width="370c" height="250c" />
+                                            <div class="b-wrapper"><h2 class="b-animate b-from-left b-delay03">{vo.title}</h2></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </f:for>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</f:section>

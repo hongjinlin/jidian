@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'dce'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="wizardIcon.default">Default TYPO3 icons</label>
+			<label index="wizardIcon.custom">Custom icon</label>
+			<label index="wizardIcon.customIcon">Use custom icon in field below</label>
+
+			<label index="typo3_default_categories">TYPO3 default categories</label>
+			<label index="common_textImage2_title">Text &amp; Images 2</label>
+			<label index="special_sitemap2_title">Sitemap 2</label>
+
+			<label index="tx_dce_domain_model_dce">DCE</label>
+			<label index="tx_dce_domain_model_dce_long">Dynamic Content Elements</label>
+			<label index="tx_dce_domain_model_dce.type">Type</label>
+			<label index="tx_dce_domain_model_dce.type.databased">Database based</label>
+			<label index="tx_dce_domain_model_dce.type.filebased">File based</label>
+			<label index="tx_dce_domain_model_dce.identifier">Identifier</label>
+			<label index="tx_dce_domain_model_dce.title">Title</label>
+			<label index="tx_dce_domain_model_dce.category">Category</label>
+			<label index="tx_dce_domain_model_dce.fields">Fields</label>
+			<label index="tx_dce_domain_model_dce.wizard">Wizard</label>
+			<label index="tx_dce_domain_model_dce.wizardEnable">Show DCE in content element Wizard</label>
+			<label index="tx_dce_domain_model_dce.wizardCategory">Wizard category</label>
+			<label index="tx_dce_domain_model_dce.wizardDescription">Wizard description</label>
+			<label index="tx_dce_domain_model_dce.wizardIcon">Wizard icon</label>
+			<label index="tx_dce_domain_model_dce.wizardCustomIcon">Wizard custom icon (24x24 pixel)</label>
+
+			<label index="tx_dce_domain_model_dce.template">Template</label>
+			<label index="tx_dce_domain_model_dce.templateType">Template type</label>
+			<label index="tx_dce_domain_model_dce.templateType.file">File</label>
+			<label index="tx_dce_domain_model_dce.templateType.inline">Inline</label>
+			<label index="tx_dce_domain_model_dce.templateContent">Template content (fluid)</label>
+			<label index="tx_dce_domain_model_dce.templateFile">Template file (fluid)</label>
+			<label index="tx_dce_domain_model_dce.layoutRootPath">Fluid layout root path</label>
+			<label index="tx_dce_domain_model_dce.partialRootPath">Fluid partial root path</label>
+
+            <label index="tx_dce_domain_model_dce.backendTemplate">Backend Template</label>
+            <label index="tx_dce_domain_model_dce.previewTemplateType">Preview texts template type</label>
+            <label index="tx_dce_domain_model_dce.headerPreview">Header preview template (fluid)</label>
+            <label index="tx_dce_domain_model_dce.bodytextPreview">Bodytext preview template (fluid)</label>
+            <label index="tx_dce_domain_model_dce.headerPreviewTemplateFile">Header preview template file (fluid)</label>
+            <label index="tx_dce_domain_model_dce.bodytextPreviewTemplateFile">Bodytext preview template file (fluid)</label>
+
+			<label index="tx_dce_domain_model_dce.detailpage">Detail page</label>
+			<label index="tx_dce_domain_model_dce.enableDetailpage">Enable detail page</label>
+			<label index="tx_dce_domain_model_dce.detailpageIdentifier">Detail page identifier (get parameter)</label>
+			<label index="tx_dce_domain_model_dce.detailpageTemplate">Detail page template (fluid)</label>
+			<label index="tx_dce_domain_model_dce.detailpageTemplateFile">Detail page template file (fluid)</label>
+
+			<label index="tx_dce_domain_model_dce.miscellaneous">Miscellaneous</label>
+			<label index="tx_dce_domain_model_dce.cacheDce">Cache DCE frontend plugin</label>
+			<label index="tx_dce_domain_model_dce.showAccessTab">Enable access tab in backend</label>
+			<label index="tx_dce_domain_model_dce.showCategoryTab">Enable categories tab in backend</label>
+			<label index="tx_dce_domain_model_dce.hideDefaultCeWrap">Disables the "div.csc-default" wrapping</label>
+			<label index="tx_dce_domain_model_dce.paletteFields">DCE palette fields</label>
+
+			<label index="tx_dce_domain_model_dcefield">DCE Field</label>
+			<label index="tx_dce_domain_model_dcefield.type">Type</label>
+			<label index="tx_dce_domain_model_dcefield.type.element">Element</label>
+			<label index="tx_dce_domain_model_dcefield.type.tab">Tab</label>
+			<label index="tx_dce_domain_model_dcefield.type.section">Section</label>
+			<label index="tx_dce_domain_model_dcefield.title">Title</label>
+			<label index="tx_dce_domain_model_dcefield.variable">Variable (unique key for usage in fluid template)</label>
+			<label index="tx_dce_domain_model_dcefield.configuration">Configuration</label>
+			<label index="tx_dce_domain_model_dcefield.section_fields">Section fields</label>
+			<label index="tx_dce_domain_model_dcefield.section_fields_tag">Section fields tag (singular)</label>
+
+			<label index="tx_dce_formeval_headline">Input '%s' not valid</label>
+			<label index="tx_dce_formeval_noLeadingNumber">The value may not start with numbers. Changed input from '%s' to '%s'.</label>
+			<label index="tx_dce_formeval_lowerCamelCase">The value have to be formated as lowerCamelCase. Changed input from '%s' to '%s'.</label>
+
+			<label index="tt_content.tx_dce_dce">DCE</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="wizardIcon.default">Standard TYPO3-Icons</label>
+			<label index="wizardIcon.custom">Eigenes Icon</label>
+			<label index="wizardIcon.customIcon">Benutze eigenes Icon in Feld darunter</label>
+
+			<label index="typo3_default_categories">Standard TYPO3 Kategorien</label>
+			<label index="common_textImage2_title">Text &amp; Bild 2</label>
+			<label index="special_sitemap2_title">Sitemap 2</label>
+
+			<label index="tx_dce_domain_model_dce">DCE</label>
+			<label index="tx_dce_domain_model_dce_long">Dynamische Content-Elemente</label>
+            <label index="tx_dce_domain_model_dce.type">Typ</label>
+			<label index="tx_dce_domain_model_dce.type.databased">Datenbankbasiert</label>
+			<label index="tx_dce_domain_model_dce.type.filebased">Dateibasiert</label>
+            <label index="tx_dce_domain_model_dce.identifier">Identifikator</label>
+			<label index="tx_dce_domain_model_dce.title">Titel</label>
+			<label index="tx_dce_domain_model_dce.category">Kategorie</label>
+			<label index="tx_dce_domain_model_dce.fields">Felder</label>
+			<label index="tx_dce_domain_model_dce.wizard">Wizard</label>
+			<label index="tx_dce_domain_model_dce.wizardEnable">Zeige DCE in Wizard zum Anlegen neuer Content-Elemente</label>
+			<label index="tx_dce_domain_model_dce.wizardCategory">Wizard Kategorie</label>
+			<label index="tx_dce_domain_model_dce.wizardDescription">Wizard Beschreibung</label>
+			<label index="tx_dce_domain_model_dce.wizardIcon">Wizard Icon</label>
+			<label index="tx_dce_domain_model_dce.wizardCustomIcon">Wizard benutzerdefiniertes Icon (24x24 Pixel)</label>
+
+			<label index="tx_dce_domain_model_dce.template">Template</label>
+			<label index="tx_dce_domain_model_dce.templateType">Template-Typ</label>
+			<label index="tx_dce_domain_model_dce.templateType.file">Datei</label>
+			<label index="tx_dce_domain_model_dce.templateType.inline">Inline</label>
+			<label index="tx_dce_domain_model_dce.templateContent">Template-Inhalt (Fluid)</label>
+			<label index="tx_dce_domain_model_dce.templateFile">Template-Datei (Fluid)</label>
+			<label index="tx_dce_domain_model_dce.layoutRootPath">Fluid Layout Root-Verzeichnis</label>
+			<label index="tx_dce_domain_model_dce.partialRootPath">Fluid Partial Root-Verzeichnis</label>
+
+            <label index="tx_dce_domain_model_dce.backendTemplate">Backend Template</label>
+            <label index="tx_dce_domain_model_dce.previewTemplateType">Vorschau-Template-Typ</label>
+            <label index="tx_dce_domain_model_dce.headerPreview">Überschriften-Vorschau-Template (Fluid)</label>
+            <label index="tx_dce_domain_model_dce.bodytextPreview">Inhaltstext-Vorschau-Template (Fluid)</label>
+            <label index="tx_dce_domain_model_dce.headerPreviewTemplateFile">Überschriften-Vorschau-Template-Datei (Fluid)</label>
+            <label index="tx_dce_domain_model_dce.bodytextPreviewTemplateFile">Inhaltstext-Vorschau-Template-Datei (Fluid)</label>
+
+			<label index="tx_dce_domain_model_dce.detailpage">Detailseite</label>
+			<label index="tx_dce_domain_model_dce.detailpageIdentifier">Detailseiten-Identifikator (GET-Parameter)</label>
+			<label index="tx_dce_domain_model_dce.enableDetailpage">Aktiviere Detailseite</label>
+			<label index="tx_dce_domain_model_dce.detailpageTemplate">Detailseiten-Template (Fluid)</label>
+			<label index="tx_dce_domain_model_dce.detailpageTemplateFile">Detailseiten-Template-Datei (Fluid)</label>
+
+			<label index="tx_dce_domain_model_dce.miscellaneous">Sonstiges</label>
+			<label index="tx_dce_domain_model_dce.cacheDce">DCE Frontend Plugin Cache aktivieren</label>
+			<label index="tx_dce_domain_model_dce.showAccessTab">Aktiviere "Zugriff" Tab im Backend</label>
+			<label index="tx_dce_domain_model_dce.showCategoryTab">Aktiviere "Kategorien" Tab im Backend</label>
+			<label index="tx_dce_domain_model_dce.hideDefaultCeWrap">Deaktiviere das "div.csc-default" Wrapping</label>
+			<label index="tx_dce_domain_model_dce.paletteFields">DCE Paletten-Felder</label>
+
+			<label index="tx_dce_domain_model_dcefield">DCE Feld</label>
+			<label index="tx_dce_domain_model_dcefield.type">Typ</label>
+			<label index="tx_dce_domain_model_dcefield.type.element">Element</label>
+			<label index="tx_dce_domain_model_dcefield.type.tab">Tab</label>
+			<label index="tx_dce_domain_model_dcefield.type.section">Sektion</label>
+			<label index="tx_dce_domain_model_dcefield.title">Titel</label>
+			<label index="tx_dce_domain_model_dcefield.variable">Variable (eindeutiger Schlüssel, wird im Fluid-Template verwendet)</label>
+			<label index="tx_dce_domain_model_dcefield.configuration">Konfiguration</label>
+			<label index="tx_dce_domain_model_dcefield.section_fields">Sektionsfelder</label>
+			<label index="tx_dce_domain_model_dcefield.section_fields_tag">Sektionsfelder Bezeichnung (Einzahl)</label>
+
+			<label index="tx_dce_formeval_headline">Eingabe '%s' ungültig</label>
+			<label index="tx_dce_formeval_noLeadingNumber">Der Wert darf nicht mit Nummern beginnen. Eingabe wurde von '%s' nach '%s' geändert.</label>
+			<label index="tx_dce_formeval_lowerCamelCase">Der Wert muss nach lowerCamelCase formatiet sein. Eingabe wurde von '%s' nach '%s' geändert.</label>
+		</languageKey>
+	</data>
+</T3locallang>

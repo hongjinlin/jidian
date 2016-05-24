@@ -1,0 +1,31 @@
+{namespace dce=ArminVieweg\Dce\ViewHelpers}
+<f:layout name="Default" />
+
+<f:section name="main">
+    <div class="team">
+        <div class="container-fluid">
+            <div class="team-top">
+                <h3>{field.title}</h3>
+            </div>
+            <div class="team-main">
+                <f:for each="{field.teamlist}" as="vo">
+                    <div class="team-one">
+                        <div class="col-md-3 team-left">
+                            <img src="uploads/pics/{vo.image}" alt="" />
+                        </div>
+                        <div class="col-md-3 team-left">
+                            <div class="team-text">
+                                <span>{vo.job}</span>
+                                <h4>{vo.name}</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-6 team-right">
+                            <f:format.nl2br>{vo.description}</f:format.nl2br>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </f:for>
+            </div>
+        </div>
+    </div>
+</f:section>

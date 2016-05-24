@@ -1,0 +1,101 @@
+<table class="table table-hover">
+    <tr>
+        <td>
+            <f:translate key="tx_payment_domain_model_pay.money"/>
+        </td>
+        <td>
+            <f:format.currency currencySign="￥" decimalSeparator="." thousandsSeparator=",">{pay.money}</f:format.currency>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_payment_domain_model_pay.name"/>
+        </td>
+        <td>
+            {pay.name}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_payment_domain_model_pay.email"/>
+        </td>
+        <td>
+            {pay.email}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_payment_domain_model_pay.telephone"/>
+        </td>
+        <td>
+            {pay.telephone}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_payment_domain_model_pay.comment"/>
+        </td>
+        <td>
+            {pay.comment}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_payment_domain_model_pay.module"/>
+        </td>
+        <td>
+            {pay.module}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_payment_domain_model_pay.datauid"/>
+        </td>
+        <td>
+            {pay.datauid}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_payment_domain_model_pay.title"/>
+        </td>
+        <td>
+            {pay.title}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_payment_domain_model_pay.url"/>
+        </td>
+        <td>
+            {pay.url}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_payment_domain_model_pay.ordernumber"/>
+        </td>
+        <td>
+            {pay.ordernumber}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_payment_domain_model_pay.payment"/>
+        </td>
+        <td>
+            {pay.payment}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <f:translate key="tx_payment_domain_model_pay.certnumber"/>
+        </td>
+        <td>
+            {pay.certnumber}&nbsp;
+            <f:if condition="{pay.certnumber}">
+                <a href="uploads/certificate/{pay.certnumber}.jpg" class="" target="_blank">查看</a>
+            </f:if>
+        </td>
+    </tr>
+</table>

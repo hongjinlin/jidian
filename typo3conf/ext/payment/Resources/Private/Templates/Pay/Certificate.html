@@ -1,0 +1,19 @@
+<f:layout name="Default"/>
+
+<f:section name="main">
+    <f:form action="certificate" class="form-inline" method="post">
+        <div class="form-group">
+            <label for="certnumber">证书编号</label>
+            <f:form.textfield name="certnumber" class="form-control" id="certnumber" value="" placeholder="请输入"/>
+        </div>
+        <button type="submit" class="btn btn-default">查询</button>
+    </f:form>
+    <f:if condition="{no-result}">
+        <br/>
+        <p style="color: red;">查询无数据</p>
+    </f:if>
+    <f:if condition="{certnumber}">
+        <br/>
+        <f:image src="uploads/certificate/{certnumber}.jpg" maxWidth="999" class="img-responsive" />
+    </f:if>
+</f:section>

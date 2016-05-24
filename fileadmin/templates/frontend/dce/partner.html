@@ -1,0 +1,31 @@
+{namespace dce=ArminVieweg\Dce\ViewHelpers}
+<f:layout name="Default" />
+
+<f:section name="main">
+    <div class="partner">
+        <div class="container">
+            <div class="partner-top">
+                <h3>{field.title}</h3>
+                <f:if condition="{field.subtitle}"><p>{field.subtitle}</p></f:if>
+            </div>
+            <div class="partner-bottom">
+                <div  id="top" class="callbacks_container">
+                    <ul class="rslides" id="slider5">
+                        <li>
+                            <div class="part-one bxslider-partner">
+                                <f:for each="{field.partnerlist}" as="vo">
+                                    <div class="col-md-4 partner-left">
+                                        <a href="{vo.link}" target="_blank" title="{vo.description} {vo.name}">
+                                            <f:image src="uploads/pics/{vo.image}" alt="" width='237c' height='143c' />
+                                        </a>
+                                    </div>
+                                </f:for>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+</f:section>

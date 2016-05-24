@@ -1,0 +1,200 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    302,
+                    -27
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": true,
+                    "_default2_new_create": true,
+                    "_default3_edit_update": true,
+                    "_default4_delete": true,
+                    "customActions": [
+                        "success"
+                    ]
+                },
+                "name": "Pay",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": true,
+                    "type": "Entity",
+                    "uid": "639842495105"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "\u4ed8\u6b3e\u91d1\u989d",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": true,
+                            "propertyName": "money",
+                            "propertyType": "Float",
+                            "uid": "1389364782558"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "\u4ed8\u6b3e\u4eba\u7684\u59d3\u540d",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": true,
+                            "propertyName": "name",
+                            "propertyType": "Text",
+                            "uid": "370428604125"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "\u4ed8\u6b3e\u4eba\u7684\u90ae\u7bb1",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": true,
+                            "propertyName": "email",
+                            "propertyType": "Text",
+                            "uid": "722659908900"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "\u4ed8\u6b3e\u4eba\u7684\u7535\u8bdd",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "telephone",
+                            "propertyType": "Text",
+                            "uid": "931249557304"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "\u4ed8\u6b3e\u6240\u5c5e\u6a21\u5757",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": true,
+                            "propertyName": "module",
+                            "propertyType": "Text",
+                            "uid": "425644679453"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "\u4ed8\u6b3e\u6240\u5728\u6a21\u5757\u7684\u6570\u636eID",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "datauid",
+                            "propertyType": "Integer",
+                            "uid": "370607018344"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "\u4ed8\u6b3e\u9875\u9762\u7684\u94fe\u63a5",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": true,
+                            "propertyName": "url",
+                            "propertyType": "Text",
+                            "uid": "745799574562"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "\u4ed8\u6b3e\u5e73\u53f0\u8fd4\u56de\u7684\u8ba2\u5355\u7f16\u53f7",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "ordernumber",
+                            "propertyType": "Text",
+                            "uid": "640890142314"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "\u652f\u4ed8\u65b9\u5f0f, \u5fae\u4fe1\/\u652f\u4ed8\u5b9d",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": true,
+                            "propertyName": "payment",
+                            "propertyType": "Text",
+                            "uid": "233775784927"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "\u7535\u5b50\u8bc1\u4e66\u7684\u7f16\u53f7",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "certnumber",
+                            "propertyType": "Text",
+                            "uid": "1163804805813"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "\u4f20\u64ad\u5206\u4eab\u4eba\u7684ID",
+                            "propertyIsExcludeField": true,
+                            "propertyIsRequired": false,
+                            "propertyName": "spreadshareuserid",
+                            "propertyType": "Integer",
+                            "uid": "1090139998822"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [],
+        "description": "",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "",
+            "disableLocalization": false,
+            "disableVersioning": true,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "6.2.0-6.2.99",
+            "version": "1.0"
+        },
+        "extensionKey": "payment",
+        "name": "Payment Module",
+        "originalExtensionKey": "payment",
+        "persons": [
+            {
+                "company": "",
+                "email": "it.support@qq.com",
+                "name": "\u738b\u8005",
+                "role": "Product Manager"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "pay",
+                "name": "\u4ed8\u6b3e\u5e73\u53f0"
+            }
+        ],
+        "vendorName": "NGOOS"
+    },
+    "wires": [],
+    "log": {
+        "last_modified": "2015-06-19 01:01",
+        "extension_builder_version": "7.1.0",
+        "be_user": " (1)"
+    }
+}

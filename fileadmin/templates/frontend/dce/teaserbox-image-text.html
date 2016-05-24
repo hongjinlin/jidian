@@ -1,0 +1,47 @@
+{namespace dce=ArminVieweg\Dce\ViewHelpers}
+<f:layout name="Default" />
+
+<f:section name="main">
+    <div class="idea">
+        <div class="container">
+            <div class="idea-main">
+                <f:if condition="{field.style}">
+                    <f:then>
+                        <div class="idea-top">
+                            <div class="col-md-7 idea-right id-one-left">
+                                <h3>{field.title}</h3>
+                                <p><f:format.nl2br>{field.subtitle}</f:format.nl2br></p>
+                                <div class="i-btn">
+                                    <f:if condition="{field.link}">
+                                        <a href="{dce:typolinkUrl(parameter:'{field.link}')}" target="{field.linktarget}">{field.linktext}</a>
+                                    </f:if>
+                                </div>
+                            </div>
+                            <div class="col-md-5 idea-left id-one-right">
+                                <img src="uploads/pics/{field.image}" alt="" />
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </f:then>
+                    <f:else>
+                        <div class="idea-top">
+                            <div class="col-md-5 idea-left id-left">
+                                <img src="uploads/pics/{field.image}" alt="" />
+                            </div>
+                            <div class="col-md-7 idea-right id-right">
+                                <h3>{field.title}</h3>
+                                <p><f:format.nl2br>{field.subtitle}</f:format.nl2br></p>
+                                <div class="i-btn">
+                                    <f:if condition="{field.link}">
+                                        <a href="{dce:typolinkUrl(parameter:'{field.link}')}" target="{field.linktarget}">{field.linktext}</a>
+                                    </f:if>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </f:else>
+                </f:if>
+            </div>
+        </div>
+    </div>
+</f:section>

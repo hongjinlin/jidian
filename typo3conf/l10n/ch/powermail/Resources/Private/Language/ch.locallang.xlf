@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="ch" datatype="plaintext" original="messages" date="2015-08-30T14:56:46Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="Back" approved="yes">
+			<source>Back</source>
+			<target>后退</target>
+		</trans-unit>
+		<trans-unit id="BackendCheckBackupBefore" approved="yes">
+			<source>Note: Please backup all powermail tables before you choose this option!</source>
+			<target>注意：请备份所有Powermail表，在你选择这个选项之前</target>
+		</trans-unit>
+		<trans-unit id="BackendCheckDevelopmentContextTitle" approved="yes">
+			<source>Development Context</source>
+			<target>开发环境</target>
+		</trans-unit>
+		<trans-unit id="BackendCheckEmailCorrect" approved="yes">
+			<source>Email send without problems (mail transmitted to mailserver)</source>
+			<target>邮件发送无问题（邮件已传送到邮件服务器）</target>
+		</trans-unit>
+		<trans-unit id="BackendCheckEmailTitle" approved="yes">
+			<source>Email Sending Status</source>
+			<target>邮件发送状态</target>
+		</trans-unit>
+		<trans-unit id="BackendListFilterCleanLink" approved="yes">
+			<source>Show all Mails</source>
+			<target>显示所有邮件</target>
+		</trans-unit>
+		<trans-unit id="BackendListMails" approved="yes">
+			<source>Mails</source>
+			<target>邮件</target>
+		</trans-unit>
+		<trans-unit id="BackendListNoMails" approved="yes">
+			<source>No Mails to show</source>
+			<target>没有邮件可显示</target>
+		</trans-unit>
+		<trans-unit id="Emails" approved="yes">
+			<source>Emails</source>
+			<target>电子邮件</target>
+		</trans-unit>
+		<trans-unit id="PowermailFrontendDeleteView" approved="yes">
+			<source>Delete</source>
+			<target>删除</target>
+		</trans-unit>
+		<trans-unit id="PowermailFrontendDetailView" approved="yes">
+			<source>Details</source>
+			<target>详细</target>
+		</trans-unit>
+		<trans-unit id="PowermailFrontendEditConfirm" approved="yes">
+			<source>Changes successfully saved</source>
+			<target>保存成功</target>
+		</trans-unit>
+		<trans-unit id="PowermailFrontendEditSubmit" approved="yes">
+			<source>Save Changes</source>
+			<target>保存</target>
+		</trans-unit>
+		<trans-unit id="PowermailFrontendEditView" approved="yes">
+			<source>Edit</source>
+			<target>编辑</target>
+		</trans-unit>
+		<trans-unit id="PowermailFrontendFilterSubmit" approved="yes">
+			<source>Filter Now</source>
+			<target>搜索</target>
+		</trans-unit>
+		<trans-unit id="\In2code\Powermail\Domain\Model\Mail.body" approved="yes">
+			<source>Email Text</source>
+			<target>邮件内容</target>
+		</trans-unit>
+		<trans-unit id="\In2code\Powermail\Domain\Model\Mail.feuser" approved="yes">
+			<source>Frontend User</source>
+			<target>前台用户</target>
+		</trans-unit>
+		<trans-unit id="\In2code\Powermail\Domain\Model\Mail.receiverMail" approved="yes">
+			<source>Receivers Email</source>
+			<target>接收者邮件地址</target>
+		</trans-unit>
+		<trans-unit id="\In2code\Powermail\Domain\Model\Mail.senderIp" approved="yes">
+			<source>Senders IP-Address</source>
+			<target>发送者IP地址</target>
+		</trans-unit>
+		<trans-unit id="\In2code\Powermail\Domain\Model\Mail.senderMail" approved="yes">
+			<source>Senders Email</source>
+			<target>发送者邮件地址</target>
+		</trans-unit>
+		<trans-unit id="\In2code\Powermail\Domain\Model\Mail.senderName" approved="yes">
+			<source>Senders Name</source>
+			<target>发送者名字</target>
+		</trans-unit>
+		<trans-unit id="\In2code\Powermail\Domain\Model\Mail.subject" approved="yes">
+			<source>Subject</source>
+			<target>主题</target>
+		</trans-unit>
+		<trans-unit id="\In2code\Powermail\Domain\Model\Mail.userAgent" approved="yes">
+			<source>Senders Browser-Signature</source>
+			<target>发送者浏览器标识</target>
+		</trans-unit>
+		<trans-unit id="back" approved="yes">
+			<source>Go back</source>
+			<target>后退</target>
+		</trans-unit>
+		<trans-unit id="pleaseChoose" approved="yes">
+			<source>Please choose...</source>
+			<target>请选择...</target>
+		</trans-unit>
+		<trans-unit id="validationerror_captcha" approved="yes">
+			<source>Wrong captcha code entered - please try again!</source>
+			<target>验证码不正确，请重试</target>
+		</trans-unit>
+		<trans-unit id="validationerror_mandatory" approved="yes">
+			<source>This field must be filled!</source>
+			<target>必填，不能为空</target>
+		</trans-unit>
+		<trans-unit id="validationerror_mandatory_multi" approved="yes">
+			<source>One of these fields must be filled!</source>
+			<target>至少有一项不能为空</target>
+		</trans-unit>
+		<trans-unit id="validationerror_password" approved="yes">
+			<source>Both Password-Fields are not equal!</source>
+			<target>两次输入的密码不一致</target>
+		</trans-unit>
+		<trans-unit id="validationerror_validation.1" approved="yes">
+			<source>This is not a valid email address!</source>
+			<target>不是有效的邮件地址</target>
+		</trans-unit>
+		<trans-unit id="validationerror_validation.2" approved="yes">
+			<source>This is not a valid URL!</source>
+			<target>不是有效的链接</target>
+		</trans-unit>
+		<trans-unit id="validationerror_validation.3" approved="yes">
+			<source>This is not a valid Phone Number!</source>
+			<target>不是有效的电话号码</target>
+		</trans-unit>
+		<trans-unit id="validationerror_validation.4" approved="yes">
+			<source>Please insert numbers only!</source>
+			<target>只能填入数字</target>
+		</trans-unit>
+		<trans-unit id="validationerror_validation.5" approved="yes">
+			<source>Please insert letters only!</source>
+			<target>只能填入字母</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,42 @@
+{namespace vh=In2code\Powermail\ViewHelpers}
+<f:if condition="{settings.search.fields}">
+	<f:form action="list" name="filter" id="powermail_frontend_search" class="form-inline">
+		<div class="powermail_frontend_filter input-group">
+
+			<f:comment>Fulltext Search</f:comment>
+			<f:for each="{vh:String.Explode(string: '{settings.search.fields}')}" as="fieldUid">
+				<f:if condition="{0 : fieldUid} == {0 : '_all'}">
+					<f:then>
+							<f:form.textfield
+									property="{fieldUid}"
+									id="powermail_frontend_search_all"
+									class="powermail_frontend_search powermail_frontend_search_all input-sm form-control"
+									value="{piVars.filter._all}" placeholder="关键字" />
+					</f:then>
+				</f:if>
+			</f:for>
+
+			<f:comment>Selected Fields</f:comment>
+			<f:for each="{searchFields}" as="searchField">
+					<label for="powermail_frontend_search_{searchField.marker}">
+						{searchField.title}
+					</label>
+					<f:form.textfield
+							property="{searchField.uid}"
+							id="powermail_frontend_search_{searchField.marker}"
+							class="powermail_frontend_search powermail_frontend_search_{searchField.marker} input-sm form-control"
+							value="{vh:Misc.VariableInVariable(obj:piVars.filter, prop:searchField.uid)}" placeholder="关键字" />
+			</f:for>
+
+			<span class="powermail_frontend_search_container input-group-btn">
+				<f:form.submit value="{f:translate(key:'PowermailFrontendFilterSubmit')}" class="powermail_frontend_search_submit btn btn-sm btn-default" />
+			</span>
+
+			<div class="clear"></div>
+		</div>
+	</f:form>
+</f:if>
+
+<f:if condition="{settings.search.abc}">
+	<f:render partial="Output/Abc" arguments="{_all}" />
+</f:if>

@@ -1,0 +1,22 @@
+{namespace dce=ArminVieweg\Dce\ViewHelpers}
+<f:layout name="Default" />
+
+<f:section name="main">
+    <div class="container">
+        <div class="poll">
+            <div class="poll_desc">
+                <h5 class="poll_items">
+                    <f:for each="{field.list}" as="vo">
+                        <a href="{dce:typolinkUrl(parameter:'{vo.link}')}" title="{vo.title}" class="poll_item">{vo.title}</a>
+                    </f:for>
+                </h5>
+            </div>
+            <div class="skill">
+                <div style="width:0%"> </div>
+            </div>
+            <div class="poll_desc hide">
+                <h5 class="poll_percent">0%</h5>
+            </div>
+        </div>
+    </div>
+</f:section>

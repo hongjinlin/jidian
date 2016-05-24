@@ -1,0 +1,28 @@
+<div id="top"></div>
+<div class="page-wrap">
+    <f:render partial="header" arguments="{_all}"/>
+    <f:render section="banner"/>
+    <!--TYPO3SEARCH_begin-->
+    <div class="main">
+        <f:render section="main"/>
+    </div>
+    <!--TYPO3SEARCH_end-->
+    <f:render partial="footer" arguments="{_all}"/>
+</div>
+
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript">
+    var jiathis_config = {data_track_clickback:'true'};
+</script>
+<script type="text/javascript" src="//v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?{baidukey}";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>

@@ -1,0 +1,7 @@
+@charset "utf-8";
+.be-login { background: url("../images/customer-backend.jpg") center top; background-size: cover;}
+.be-login .text-muted a { color: #909fa7;}
+.be-login .tx-felogin-pi1 .status-message { margin-bottom: 10px;}
+
+.tx-datamintsfeuser-pi1 .error-label { font-size: 12px; color: #f05050; margin-top: 3px;}
+.xdsoft_datetimepicker { display: none;}

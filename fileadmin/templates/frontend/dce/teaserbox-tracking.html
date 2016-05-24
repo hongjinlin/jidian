@@ -1,0 +1,22 @@
+{namespace dce=ArminVieweg\Dce\ViewHelpers}
+<f:layout name="Default" />
+
+<f:section name="main">
+    <div class="number">
+        <div class="container">
+            <div class="number-main">
+                <h3>{field.title}</h3>
+            </div>
+            <div class="number-bottom">
+                <ul>
+                    <f:for each="{field.data}" as="vo">
+                        <li>
+                            <h4>{vo.number}</h4>
+                            <p>{vo.name}</p>
+                        </li>
+                    </f:for>
+                </ul>
+            </div>
+        </div>
+    </div>
+</f:section>

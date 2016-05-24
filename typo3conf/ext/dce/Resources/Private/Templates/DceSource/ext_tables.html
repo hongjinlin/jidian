@@ -1,0 +1,47 @@
+{namespace dce=ArminVieweg\Dce\ViewHelpers}<?php
+
+$GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
+	0 => 'LLL:EXT:dce/Resources/Private/Language/locallang_db.xml:tx_dce_domain_model_dce_long',
+	1 => '--div--'
+);
+
+<f:for each="{dceArray}" as="dce">
+<f:if condition="{dce.hidden} == 0">
+	///////////////////////////////////////////////////// {f:if(condition:"{dce.uid}", then:"uid: {dce.uid}", else:"identifier: {dce.identifier}")} ///
+\TYPO3\CMS\Extbase\Utility\ExtensionUtility::registerPlugin(
+	'ArminVieweg.dce',
+	'{f:if(condition:"{dce.uid}", then:"dceuid{dce.uid}", else:"dce_{dce.identifier}")}',
+	'{dce.title}'
+);
+
+$GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist']['dce_{f:if(condition:"{dce.uid}", then:"dceuid{dce.uid}", else:"dce_{dce.identifier}")}'] = 'pi_flexform';
+$GLOBALS['TCA']['tt_content']['columns']['pi_flexform']['config']['ds'][',dce_{f:if(condition:"{dce.uid}", then:"dceuid{dce.uid}", else:"dce_{dce.identifier}")}'] = '<f:render partial="FlexFormsXML" arguments="{dce:dce}"></f:render>';
+$GLOBALS['TCA']['tt_content']['types']['dce_{f:if(condition:"{dce.uid}", then:"dceuid{dce.uid}", else:"dce_{dce.identifier}")}']['showitem'] = 'CType,--palette--;;dce_palette_{dce.uid},pi_flexform; ;<f:if condition="{dce.show_access_tab}">,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access, --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.visibility;visibility, --palette--;LLL:EXT:cms/locallang_ttc.xml:palette.access;access</f:if><f:if condition="{dce:be.currentTypo3Version()} >= 6000000"><f:if condition="{dce.show_category_tab}">,--div--;LLL:EXT:lang/locallang_tca.xlf:sys_category.tabs.category,categories</f:if></f:if>,--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.extended<f:if condition="{dce:be.extensionIsInstalled(key:'gridelements')}">,tx_gridelements_container,tx_gridelements_columns</f:if>';
+<f:if condition="{dce.palette_fields}">
+	$GLOBALS['TCA']['tt_content']['palettes']['dce_palette_{dce.uid}']['canNotCollapse'] = true;
+	$GLOBALS['TCA']['tt_content']['palettes']['dce_palette_{dce.uid}']['showitem'] = '{dce.palette_fields}';
+</f:if>
+
+<f:if condition="{dce.wizard_enable}">
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('
+	mod.wizards.newContentElement.wizardItems.{dce.wizard_category}.elements.dce_{f:if(condition:"{dce.uid}", then:"dceuid{dce.uid}", else:"dce_{dce.identifier}")} {
+	    icon = <f:if condition="{dce.hasCustomWizardIcon}"><f:then>../uploads/tx_dce/{dce.wizard_custom_icon}</f:then><f:else>{dce:be.contentElementWizardIconPath()}{dce.wizard_icon}</f:else></f:if>
+	    title = {dce.title}
+	    description = {dce.wizard_description -> f:format.raw()}
+	    tt_content_defValues {
+	        CType = dce_{f:if(condition:"{dce.uid}", then:"dceuid{dce.uid}", else:"dce_{dce.identifier}")}
+	    }
+	}
+	    mod.wizards.newContentElement.wizardItems.{dce.wizard_category}.show := addToList(dce_{f:if(condition:"{dce.uid}", then:"dceuid{dce.uid}", else:"dce_{dce.identifier}")})
+');
+</f:if>
+</f:if>
+</f:for>
+
+// global definitions
+$GLOBALS['TCA']['tt_content']['columns']['CType']['config']['items'][] = array(
+	0 => 'LLL:EXT:dce/Resources/Private/Language/locallang_db.xml:tx_dce_domain_model_dce.miscellaneous',
+	1 => '--div--'
+);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPageTSConfig('mod.wizards.newContentElement.wizardItems.dce.header = LLL:EXT:dce/Resources/Private/Language/locallang_db.xml:tx_dce_domain_model_dce_long');

@@ -1,0 +1,20 @@
+# cat=Alipay; type=string; label=支付宝账号
+alipay_account =
+
+# cat=Alipay; type=string; label=支付宝合作者身份
+alipay_partner =
+
+# cat=Alipay; type=string; label=支付宝安全校验码
+alipay_key =
+
+# cat=WeChat; type=string; label=微信APPID
+wx_appid =
+
+# cat=WeChat; type=string; label=微信受理商ID
+wx_mchid =
+
+# cat=WeChat; type=string; label=微信商户支付密钥
+wx_key =
+
+# cat=WeChat; type=string; label=微信JSAPI OPENID
+wx_appsecret =

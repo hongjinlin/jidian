@@ -1,0 +1,39 @@
+<div class="header">
+    <div class="logo">
+        <f:link.page pageUid="{rootPage}">
+            <img src="{f:uri.image(src: logoFile)}" alt="{siteTitle}" title="{siteTitle}" />
+        </f:link.page>
+    </div>
+    <div class="navigation">
+        <span class="menu"></span>
+
+        <f:cObject typoscriptObjectPath="lib.navigation.main"/>
+
+        <div class="search-box" style="display: none;">
+            <form action="<f:uri.page pageUid='search' />" method="post">
+                <div class="input-group">
+                    <input type="hidden" name="tx_indexedsearch[_sections]" value="0">
+                    <input type="hidden" name="tx_indexedsearch[_freeIndexUid]" value="_">
+                    <input type="hidden" name="tx_indexedsearch[pointer]" value="0">
+                    <input type="hidden" name="tx_indexedsearch[ext]" value="">
+                    <input type="hidden" name="tx_indexedsearch[type]" value="1">
+                    <input type="hidden" name="tx_indexedsearch[defOp]" value="0">
+                    <input type="hidden" name="tx_indexedsearch[media]" value="-1">
+                    <input type="hidden" name="tx_indexedsearch[order]" value="rank_flag">
+                    <input type="hidden" name="tx_indexedsearch[group]" value="flat">
+                    <input type="hidden" name="tx_indexedsearch[lang]" value="{sys_language_uid}">
+                    <input type="hidden" name="tx_indexedsearch[desc]" value="0">
+                    <input type="hidden" name="tx_indexedsearch[results]" value="10">
+                    <input type="text" name="tx_indexedsearch[sword]" value="{searchKeyword}" placeholder="{f:translate(key:'LLL:fileadmin/templates/frontend/private/language/locallang.xml:searchPlaceholder')}" required="1" class="search-text form-control" />
+                    <span class="input-group-btn">
+                        <button type="submit" class="btn btn-success" name="tx_indexedsearch[submit_button]"><span class="fa fa-search"></span></button>
+                        <button type="button" class="btn btn-default search-close"><span class="fa fa-close"></span></button>
+                    </span>
+                </div>
+            </form>
+        </div>
+
+        <div style="display: none;"><f:cObject typoscriptObjectPath="lib.language"/></div>
+    </div>
+    <div class="clearfix"></div>
+</div>

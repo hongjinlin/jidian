@@ -1,0 +1,39 @@
+<f:layout name="default"/>
+<f:section name="banner">
+    <div class="banner banner1">
+        <div class="banner-main">
+            <div class="container">
+                <div class="banner-top bnr-top">
+                    <f:if condition="{f:cObject(typoscriptObjectPath:'lib.dynamicContent',data:'0')}">
+                        <f:then>
+                            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="0"/>
+                        </f:then>
+                        <f:else>
+                            <h1>{pageTitle}</h1>
+                        </f:else>
+                    </f:if>
+                </div>
+            </div>
+        </div>
+        <div class="banner-ellipse"><img src="fileadmin/templates/frontend/public/images/ellipse.png" alt="" /></div>
+        <div class="img-overly"></div>
+    </div>
+</f:section>
+<f:section name="main">
+    <div class="main-content">
+        <div class="container">
+            <div class="tabs-box row">
+                <div class="sidebar col-md-2 col-sm-3 col-xs-3">
+                    <f:cObject typoscriptObjectPath="lib.navigation.subnavigation"/>
+                    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="2"/>
+                </div>
+                <div class="tab-grids col-md-10 col-sm-9 col-xs-9">
+                    <div class="tab-grid">
+                        <f:cObject typoscriptObjectPath="lib.dynamicContent" data="1"/>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+</f:section>

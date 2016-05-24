@@ -1,0 +1,52 @@
+<div class="footer">
+    <div class="container">
+        <div class="footer-main">
+            <div class="contact">
+                <div class="col-md-8 contact-left">
+                    <f:if condition="{f:cObject(typoscriptObjectPath:'lib.dynamicContentSlide',data:'98')}">
+                        <f:cObject typoscriptObjectPath="lib.dynamicContentSlide" data="98" />
+                    </f:if>
+                </div>
+                <div class="col-md-4 contact-right">
+                    <f:if condition="{f:cObject(typoscriptObjectPath:'lib.dynamicContentSlide',data:'99')}">
+                        <f:cObject typoscriptObjectPath="lib.dynamicContentSlide" data="99" />
+                    </f:if>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="footer-bottom">
+                <div class="col-md-4 footer-left">
+                    <ul>
+                        <f:cObject typoscriptObjectPath="lib.navigation.footer" />
+                    </ul>
+                </div>
+                <div class="col-md-4 footer-middle">
+                    <f:if condition="{themeCopyright}">
+                        <p><f:format.raw>{themeCopyrightText}</f:format.raw></p>
+                    </f:if>
+                </div>
+                <div class="col-md-4 footer-right">
+                    <p><f:format.raw>{beian}</f:format.raw></p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sticky-bar">
+    <ul>
+        <li class="share">
+            <a href="javascript:;" class="fa fa-share-alt" target="_blank" title="分享"></a>
+            <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt hide"></a>
+        </li>
+        <li class="qrcode">
+            <a href="javascript:;" class="fa fa-qrcode" title=""></a>
+            <div class="qrcode-box">
+                <img id="pageQrCode" src="" alt="页面二维码" width="82" height="82" />
+            </div>
+        </li>
+        <li class="go-to-top" style="display: none;">
+            <a href="#top" class="scroll fa fa-angle-up" title="返回顶部"></a>
+        </li>
+    </ul>
+</div>

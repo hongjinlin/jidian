@@ -1,0 +1,18 @@
+{namespace dce=ArminVieweg\Dce\ViewHelpers}
+<f:layout name="Default" />
+
+<f:section name="main">
+    <div>
+        <div class="container-fluid">
+            <div class="team-msg">
+                <div class="col-md-7 col-sm-7 team-msg-left">
+                    <p>{field.title}</p>
+                </div>
+                <div class="col-md-5 col-sm-5 team-msg-right">
+                    <dce:typolink parameter="{field.link}">{field.linktext}</dce:typolink>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</f:section>

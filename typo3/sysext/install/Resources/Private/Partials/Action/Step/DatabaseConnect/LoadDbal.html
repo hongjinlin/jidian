@@ -1,0 +1,14 @@
+<p>
+	TYPO3 CMS 内置数据库基于MySQL，数据库抽象层允许TYPO3 CMS运行在其他的数据库引擎，例如postgres.
+    这个用的很少，而且一些核心和扩展不完全支持，因此如果你选择了非MySQL的数据库引擎安装系统可能会在使用上有一些问题。
+</p>
+
+<form method="post">
+	<f:render partial="Action/Common/HiddenFormFields" arguments="{_all}" />
+	<input type="hidden" value="execute" name="install[set]" />
+	<input type="hidden" value="1" name="install[values][loadDbal]" />
+	<button class="btn btn-warning" type="submit">
+		我不使用MySQL
+		<span class="t3-install-form-button-icon-negative">&nbsp;</span>
+	</button>
+</form>

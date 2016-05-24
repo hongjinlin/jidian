@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="ch" datatype="plaintext" original="messages" date="2015-11-14T12:01:54Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="tx_form_domain_model_element_button.value" approved="yes">
+			<source>Push this button</source>
+			<target>点击此按钮</target>
+		</trans-unit>
+		<trans-unit id="tx_form_domain_model_element_reset.value" approved="yes">
+			<source>Clear form</source>
+			<target>清理表单</target>
+		</trans-unit>
+		<trans-unit id="tx_form_domain_model_element_submit.value" approved="yes">
+			<source>Submit form</source>
+			<target>发布表单</target>
+		</trans-unit>
+		<trans-unit id="tx_form_system_validate_alphabetic.message" approved="yes">
+			<source>Use alphabetic characters</source>
+			<target>使用字母顺序字符</target>
+		</trans-unit>
+		<trans-unit id="tx_form_system_validate_alphabetic.message2" approved="yes">
+			<source>whitespace allowed</source>
+			<target>允许空格</target>
+		</trans-unit>
+		<trans-unit id="tx_form_system_validate_alphanumeric.message" approved="yes">
+			<source>Use alphanumeric characters</source>
+			<target>使用字母顺序字符</target>
+		</trans-unit>
+		<trans-unit id="tx_form_system_validate_alphanumeric.message2" approved="yes">
+			<source>whitespace allowed</source>
+			<target>允许空格</target>
+		</trans-unit>
+		<trans-unit id="tx_form_view_confirmation.donotconfirm" approved="yes">
+			<source>Go back to the form</source>
+			<target>后退到表单</target>
+		</trans-unit>
+		<trans-unit id="tx_form_view_mail.error" approved="yes">
+			<source>There was an error when sending the form by mail</source>
+			<target>发送邮件表单时出现错误。</target>
+		</trans-unit>
+		<trans-unit id="tx_form_view_mail.success" approved="yes">
+			<source>The form has been sent successfully by mail</source>
+			<target>表单已经成功的通过邮件发送。</target>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

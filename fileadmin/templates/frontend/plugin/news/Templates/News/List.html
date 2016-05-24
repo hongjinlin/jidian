@@ -1,0 +1,70 @@
+{namespace n=GeorgRinger\News\ViewHelpers}
+{namespace ngoos=Ngoos\ViewHelpers}
+<f:layout name="General"/>
+
+<f:section name="content">
+    <f:if condition="{settings.templateLayout}==1">
+        <f:then>
+            <div class="container">
+                <div class="col-sm-3 hidden-xs">
+                    <ul class="news-img-wrap news-bxslider">
+                        <f:for each="{news}" as="newsItem" iteration="iterator">
+                            <f:if condition="{ngoos:getImgUrlFromContent(content:newsItem.bodytext)}">
+                                <li>
+                                    <n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}">
+                                        <img src="{ngoos:getImgUrlFromContent(content:newsItem.bodytext)}" title="{newsItem.title}" alt="{newsItem.title}"/>
+                                    </n:link>
+                                </li>
+                            </f:if>
+                        </f:for>
+                    </ul>
+                </div>
+                <div class="col-sm-9">
+                    <f:if condition="{news}">
+                        <f:then>
+                            <ul class="news-list-view list-unstyled">
+                                <f:for each="{news}" as="newsItem" iteration="iterator">
+                                    <f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}"/>
+                                </f:for>
+                            </ul>
+                        </f:then>
+                        <f:else>
+                            <div class="no-news-found">
+                                <f:translate key="list_nonewsfound"/>
+                            </div>
+                        </f:else>
+                    </f:if>
+                </div>
+            </div>
+        </f:then>
+        <f:else>
+            <div>
+                <f:if condition="{news}">
+                    <f:then>
+                        <ul class="news-list-view list-unstyled">
+                            <f:if condition="{settings.hidePagination}">
+                                <f:then>
+                                    <f:for each="{news}" as="newsItem" iteration="iterator">
+                                        <f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}"/>
+                                    </f:for>
+                                </f:then>
+                                <f:else>
+                                    <n:widget.paginate objects="{news}" as="paginatedNews" configuration="{settings.list.paginate}" initial="{offset:settings.offset,limit:settings.limit}">
+                                        <f:for each="{paginatedNews}" as="newsItem" iteration="iterator">
+                                            <f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}"/>
+                                        </f:for>
+                                    </n:widget.paginate>
+                                </f:else>
+                            </f:if>
+                        </ul>
+                    </f:then>
+                    <f:else>
+                        <div class="no-news-found">
+                            <f:translate key="list_nonewsfound"/>
+                        </div>
+                    </f:else>
+                </f:if>
+            </div>
+        </f:else>
+    </f:if>
+</f:section>

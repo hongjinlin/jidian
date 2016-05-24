@@ -1,0 +1,30 @@
+{namespace dce=ArminVieweg\Dce\ViewHelpers}
+{namespace ngoos=Ngoos\ViewHelpers}
+<f:layout name="Default"/>
+
+<f:section name="main">
+    <div class="container video-box">
+        <f:if condition="{field.description}">
+            <div class="col-md-7 idea-right">
+                <h3>{field.title}</h3>
+                <f:format.raw>{field.description}</f:format.raw>
+            </div>
+        </f:if>
+        <div class="video-control {f:if(condition: field.description, then: 'col-md-5', else: 'col-md-12')}">
+            <video id="video-{contentObject.uid}" class="video-js vjs-default-skin vjs-big-play-centered"
+                   controls preload="none" width="100%" height="100%"
+                   poster='<ngoos:getFileUrl file="{field.previewurl}"/>'>
+                <source src="<ngoos:getFileUrl file='{field.url}'/>" type='video/mp4'/>
+                <p class="vjs-no-js"></p>
+            </video>
+            <script type="text/javascript">
+                (function ($) {
+                    $(function () {
+                        videojs("video-<f:format.raw>{contentObject.uid}</f:format.raw>", {});
+                        $("#video-<f:format.raw>{contentObject.uid}</f:format.raw>").css('height', 'auto');
+                    });
+                })(jQuery)
+            </script>
+        </div>
+    </div>
+</f:section>
